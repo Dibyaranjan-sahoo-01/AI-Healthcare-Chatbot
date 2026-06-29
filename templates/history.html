@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat History</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1abc9c 0%, #16a085 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Dark mode background */
+        body.dark {
+            background: linear-gradient(135deg, #0d1f1b 0%, #0f2620 100%);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        body.dark .header {
+            background: #132d28;
+            box-shadow: 0 4px 6px rgba(26, 188, 156, 0.1);
+        }
+
+        .header h1 {
+            color: #333;
+            font-size: 28px;
+        }
+
+        body.dark .header h1 {
+            color: #e8f8f5;
+        }
+
+        .header-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .header-buttons a {
+            padding: 10px 20px;
+            background: linear-gradient(135deg, #1abc9c 0%, #16a085 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+            border: none;
+            cursor: pointer;
+        }
+
+        .header-buttons a:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(26, 188, 156, 0.4);
+        }
+
+        .user-info {
+            background: white;
+            padding: 15px 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            color: #666;
+            font-size: 14px;
+        }
+
+        body.dark .user-info {
+            background: #1a342e;
+            color: #a8ddd4;
+            box-shadow: 0 2px 4px rgba(26, 188, 156, 0.1);
+        }
+
+        .chat-box {
+            display: grid;
+            gap: 15px;
+        }
+
+        .chat {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            border-left: 5px solid #1abc9c;
+            transition: all 0.3s ease;
+        }
+
+        body.dark .chat {
+            background: #1a342e;
+            border-left: 5px solid #48dbcf;
+            box-shadow: 0 2px 8px rgba(26, 188, 156, 0.1);
+        }
+
+        .chat:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        body.dark .chat:hover {
+            box-shadow: 0 4px 12px rgba(26, 188, 156, 0.2);
+        }
+
+        .user-message {
+            background: #e8f0ff;
+            padding: 12px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        body.dark .user-message {
+            background: #143a36;
+        }
+
+        .user {
+            font-weight: bold;
+            color: #0055ff;
+            margin-bottom: 5px;
+        }
+
+        body.dark .user {
+            color: #48dbcf;
+        }
+
+        .user-text {
+            color: #333;
+            line-height: 1.5;
+            word-wrap: break-word;
+        }
+
+        body.dark .user-text {
+            color: #e8f8f5;
+        }
+
+        .bot-message {
+            background: #f0f8ff;
+            padding: 12px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        body.dark .bot-message {
+            background: #143a36;
+        }
+
+        .bot {
+            font-weight: bold;
+            color: #28a745;
+            margin-bottom: 5px;
+        }
+
+        body.dark .bot {
+            color: #48dbcf;
+        }
+
+        .bot-text {
+            color: #333;
+            line-height: 1.5;
+            word-wrap: break-word;
+        }
+
+        body.dark .bot-text {
+            color: #e8f8f5;
+        }
+
+        .time {
+            font-size: 12px;
+            color: #999;
+            text-align: right;
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid #eee;
+        }
+
+        body.dark .time {
+            color: #7a9b90;
+            border-top: 1px solid #1f4a42;
+        }
+
+        .empty-state {
+            background: white;
+            padding: 60px 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        body.dark .empty-state {
+            background: #1a342e;
+            box-shadow: 0 2px 8px rgba(26, 188, 156, 0.1);
+        }
+
+        .empty-state h2 {
+            color: #1abc9c;
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+
+        body.dark .empty-state h2 {
+            color: #48dbcf;
+        }
+
+        .empty-state p {
+            color: #666;
+            font-size: 16px;
+        }
+
+        body.dark .empty-state p {
+            color: #a8ddd4;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        body.dark .stat-card {
+            background: #1a342e;
+            box-shadow: 0 2px 4px rgba(26, 188, 156, 0.1);
+        }
+
+        .stat-number {
+            font-size: 32px;
+            font-weight: bold;
+            color: #1abc9c;
+            margin-bottom: 5px;
+        }
+
+        body.dark .stat-number {
+            color: #48dbcf;
+        }
+
+        .stat-label {
+            color: #666;
+            font-size: 14px;
+        }
+
+        body.dark .stat-label {
+            color: #a8ddd4;
+        }
+
+        /* Dark mode toggle button */
+        #dark-toggle {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            transition: all 0.3s ease;
+        }
+
+        #dark-toggle:hover {
+            background: white;
+            color: #1abc9c;
+            transform: rotate(20deg) scale(1.1);
+        }
+
+        body.dark #dark-toggle {
+            background: rgba(255, 255, 255, 0.2);
+            color: #ffd43b;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                gap: 15px;
+                align-items: flex-start;
+            }
+
+            .header h1 {
+                font-size: 24px;
+            }
+
+            .header-buttons {
+                width: 100%;
+            }
+
+            .header-buttons a {
+                flex: 1;
+                text-align: center;
+            }
+
+            .chat {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🕘 Chat History</h1>
+            <div class="header-buttons">
+                <button id="dark-toggle" onclick="toggleDarkMode()" title="Toggle dark mode">🌙</button>
+                <a href="/">← Back to Chat</a>
+                <a href="/logout">Logout</a>
+            </div>
+        </div>
+
+        <div class="user-info">
+            {% if is_admin %}
+                🛡️ Admin view: All users' chat history (read-only)
+            {% else %}
+                👤 Your personal chat history - Only you can view your conversations
+            {% endif %}
+        </div>
+
+        {% if chats|length == 0 %}
+            <div class="empty-state">
+                <h2>No Chat History Yet</h2>
+                <p>Start a conversation to see your history here</p>
+            </div>
+        {% else %}
+            <div class="stats">
+                <div class="stat-card">
+                    <div class="stat-number">{{ chats|length }}</div>
+                    <div class="stat-label">Total Conversations</div>
+                </div>
+            </div>
+
+            <div class="chat-box">
+                {% if is_admin %}
+                    {% for username, user_text, bot_text, time in chats %}
+                        <div class="chat">
+                            <div class="user-message">
+                                <div class="user">👤 {{ username }}:</div>
+                                <div class="user-text">{{ user_text }}</div>
+                            </div>
+                            <div class="bot-message">
+                                <div class="bot">🤖 Assistant:</div>
+                                <div class="bot-text">{{ bot_text }}</div>
+                            </div>
+                            <div class="time">{{ time }}</div>
+                        </div>
+                    {% endfor %}
+                {% else %}
+                    {% for user, bot, time in chats %}
+                        <div class="chat">
+                            <div class="user-message">
+                                <div class="user">👤 You:</div>
+                                <div class="user-text">{{ user }}</div>
+                            </div>
+                            <div class="bot-message">
+                                <div class="bot">🤖 Assistant:</div>
+                                <div class="bot-text">{{ bot }}</div>
+                            </div>
+                            <div class="time">{{ time }}</div>
+                        </div>
+                    {% endfor %}
+                {% endif %}
+            </div>
+        {% endif %}
+    </div>
+    <script src="/static/main.js"></script>
+</body>
+</html>

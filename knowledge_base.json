@@ -1,0 +1,1557 @@
+{
+  "entries": [
+    {
+      "condition": "Greeting",
+      "priority": "low",
+      "keywords": [
+        "hi",
+        "hello",
+        "hey",
+        "hii",
+        "hiii",
+        "hlo",
+        "helo",
+        "hy",
+        "hai",
+        "namaste",
+        "namaskar",
+        "hola",
+        "good morning",
+        "good afternoon",
+        "good evening",
+        "good day",
+        "gud morning",
+        "gud afternoon",
+        "gud evening",
+        "gud day",
+        "hello bot",
+        "hi bot",
+        "hey bot",
+        "hello assistant",
+        "hi assistant",
+        "hey assistant",
+        "hey there",
+        "hi there",
+        "hello there",
+        "greetings",
+        "greetings bot",
+        "help",
+        "help me",
+        "need help",
+        "need your help",
+        "please help",
+        "please help me",
+        "support",
+        "need support",
+        "can you help",
+        "could you help me",
+        "can you assist me",
+        "could you assist me",
+        "need assistance",
+        "i need assistance",
+        "i need your assistance",
+        "please assist me",
+        "i need help",
+        "i want help",
+        "want help",
+        "looking for help",
+        "seeking help",
+        "looking for assistance",
+        "seeking assistance",
+        "start",
+        "start chat",
+        "start conversation",
+        "begin",
+        "begin chat"
+      ],
+      "response": "Hello 👋\n\nI’m your healthcare assistant. I can help you understand symptoms, give first-aid guidance, and tell you when to seek medical help.\n\nPlease tell me what problem or symptom you are experiencing.",
+      "response_or": "ନମସ୍କାର 👋\n\nମୁଁ ଆପଣଙ୍କ ସ୍ୱାସ୍ଥ୍ୟ ସହାୟକ। ମୁଁ ଲକ୍ଷଣଗୁଡ଼ିକ ବୁଝିବାରେ, ପ୍ରଥମ ସହାୟତା ନିର୍ଦ୍ଦେଶ ଦେବାରେ, ଏବଂ ଡାକ୍ତରଙ୍କ ସହ କେବେ ଯିବାକୁ ହେବ ତାହା କହିବାରେ ସାହାଯ୍ୟ କରିପାରିବି।\n\nଦୟାକରି ମୋତେ କୁହନ୍ତୁ ଆପଣ କେଉଁ ସମସ୍ୟା ବା ଲକ୍ଷଣର ସମ୍ମୁଖୀନ ହେଉଛନ୍ତି।"
+    },
+    {
+      "condition": "Common Cold",
+      "priority": "low",
+      "keywords": [
+        "cold",
+        "common cold",
+        "sardi",
+        "jukam",
+        "runny nose",
+        "running nose",
+        "blocked nose",
+        "stuffy nose",
+        "nasal congestion",
+        "nose congestion",
+        "sneezing",
+        "continuous sneezing",
+        "frequent sneezing",
+        "nose cold",
+        "cold in nose",
+        "nose water",
+        "water from nose",
+        "sardi jukam",
+        "jukam sardi",
+        "naak behna",
+        "naak band",
+        "cold cough",
+        "mild cold",
+        "clod",
+        "cole",
+        "runnynose",
+        "sneezng"
+      ],
+      "response": "Common cold usually improves on its own.\n\nCare Steps:\n1. Drink warm fluids.\n2. Take steam inhalation.\n3. Rest well.\n4. Avoid cold air, dust, and smoke.\n\n⚠️ Consult a doctor if:\n- Cold lasts more than 10 days\n- Severe headache or fever develops\n- Breathing difficulty occurs\n- Child or elderly person is affected",
+      "response_or": "ସାଧାରଣ ସର୍ଦ୍ଦି ସାଧାରଣତଃ ନିଜେ ନିଜେ ଭଲ ହୋଇଯାଏ।\n\nଯତ୍ନ ପଦକ୍ଷେପ:\n1. ଗରମ ପାଣୀୟ ପିଅନ୍ତୁ।\n2. ଭାପ ନେବା କରନ୍ତୁ।\n3. ଭଲ ଭାବେ ବିଶ୍ରାମ କରନ୍ତୁ।\n4. ଠଣ୍ଡା ବାୟୁ, ଧୂଳି ଏବଂ ଧୂମପାନରୁ ଦୂରେଇ ରୁହନ୍ତୁ।\n\n⚠️ ଡାକ୍ତରଙ୍କ ସହ ପରାମର୍ଶ କରନ୍ତୁ ଯଦି:\n- ସର୍ଦ୍ଦି 10 ଦିନରୁ ଅଧିକ ସମୟ ରହିଥାଏ\n- ଗୁରୁତର ମୁଣ୍ଡବିନ୍ଧା ବା ଜ୍ୱର ଆସିଥାଏ\n- ଶ୍ୱାସ ନେବାରେ କଷ୍ଟ ହୁଏ\n- ପିଲା ବା ବୃଦ୍ଧ ବ୍ୟକ୍ତି ପ୍ରଭାବିତ ହୁଅନ୍ତି"
+    },
+    {
+      "condition": "Stomach Pain / Abdominal Pain",
+      "priority": "medium",
+      "keywords": [
+        "stomach pain",
+        "abdominal pain",
+        "pet dard",
+        "gas",
+        "gas pain",
+        "stomach ache",
+        "stomachache",
+        "abdominal ache",
+        "pet me dard",
+        "pet mein dard",
+        "pet ka dard",
+        "pet dukh raha hai",
+        "indigestion",
+        "acidity",
+        "acidity pain",
+        "gas problem",
+        "gas trouble",
+        "stomach cramps",
+        "abdominal cramps",
+        "cramps in stomach",
+        "bloated stomach",
+        "stomach bloating",
+        "pet phoolna",
+        "stomack pain",
+        "stomak pain",
+        "abdomen pain",
+        "pain in stomach",
+        "pain in abdomen",
+        "lower abdominal pain",
+        "upper abdominal pain"
+      ],
+      "response": "Stomach pain may be due to gas, indigestion, acidity, or infection.\n\nCare Steps:\n1. Eat light food (rice, banana, curd).\n2. Drink warm water.\n3. Avoid oily, spicy, and outside food.\n4. Rest and avoid stress.\n\n⚠️ Doctor visit needed if:\n- Pain is severe or continuous\n- Blood in stool or vomiting\n- Pain with high fever\n- Pain occurs in a child, elderly person, or pregnant woman",
+      "response_or": "ପେଟ ବେଦନା ଗ୍ୟାସ, ଅଜୀର୍ଣ୍ଣ, ଏସିଡିଟି, ବା ସଂକ୍ରମଣ କାରଣରୁ ହୋଇପାରେ।\n\nଯତ୍ନ ପଦକ୍ଷେପ:\n1. ହାଲୁକା ଖାଦ୍ୟ ଖାନ୍ତୁ (ଚାଉଳ, କଦଳୀ, ଦହି)।\n2. ଗରମ ପାଣି ପିଅନ୍ତୁ।\n3. ତେଲେଦାର, ମସଲାଦାର, ଏବଂ ବାହାର ଖାଦ୍ୟରୁ ଦୂରେଇ ରୁହନ୍ତୁ।\n4. ବିଶ୍ରାମ କରନ୍ତୁ ଏବଂ ଚାପରୁ ଦୂରେଇ ରୁହନ୍ତୁ।\n\n⚠️ ଡାକ୍ତର ଦେଖାଇବା ଆବଶ୍ୟକ ଯଦି:\n- ବେଦନା ଗୁରୁତର ବା ନିରନ୍ତର୍ୟ\n- ମଳରେ ରକ୍ତ ବା ବାନ୍ତି\n- ଉଚ୍ଚ ଜ୍ୱର ସହିତ ବେଦନା\n- ପିଲା, ବୃଦ୍ଧ ବ୍ୟକ୍ତି, ବା ଗର୍ଭବତୀ ମହିଳାରେ ବେଦନା ହୁଏ"
+    },
+    {
+      "condition": "Vomiting / Nausea",
+      "priority": "medium",
+      "keywords": [
+        "vomiting",
+        "vomit",
+        "throwing up",
+        "nausea",
+        "feeling nauseous",
+        "urge to vomit",
+        "want to vomit",
+        "ulti",
+        "ultee",
+        "ulati",
+        "ulti aa rahi hai",
+        "ulti ho rahi hai",
+        "jeene ki ghabrahat",
+        "jeene mein ghabrahat",
+        "mann ghabrana",
+        "vomiting sensation",
+        "nauseous feeling",
+        "vomitting",
+        "vommiting",
+        "vomitng",
+        "nausia",
+        "nauseous",
+        "stomach vomiting",
+        "food vomiting",
+        "gas vomiting",
+        "motion vomiting",
+        "travel sickness",
+        "motion sickness",
+        "morning nausea",
+        "continuous vomiting",
+        "frequent vomiting"
+      ],
+      "response": "Vomiting can cause dehydration.\n\nImmediate Care:\n1. Take small sips of water or ORS.\n2. Avoid solid food for some time.\n3. Rest in a side-lying position.\n\n⚠️ Consult a doctor immediately if:\n- Vomiting continues for more than 24 hours\n- Blood or dark material is present in vomit\n- Severe weakness, dizziness, or dehydration occurs\n- Vomiting occurs in a child, elderly person, or pregnant woman\n- Vomiting is accompanied by severe abdominal pain or fever",
+      "response_or": "ବାନ୍ତି ଜଳକ୍ଷୟ ହୋଇପାରେ।\n\nତୁରନ୍ତ ଯତ୍ନ:\n1. ପାଣି ବା ORSର ଛୋଟ ଛୋଟ ଘୂଣ୍ଟ ନିଅନ୍ତୁ।\n2. କିଛି ସମୟ ପାଇଁ କଠିନ ଖାଦ୍ୟରୁ ଦୂରେଇ ରୁହନ୍ତୁ।\n3. ପାଖରେ ଶୋଇବା ଅବସ୍ଥାରେ ବିଶ୍ରାମ କରନ୍ତୁ।\n\n⚠️ ତୁରନ୍ତ ଡାକ୍ତରଙ୍କ ସହ ପରାମର୍ଶ କରନ୍ତୁ ଯଦି:\n- ବାନ୍ତି 24 ଘଣ୍ଟାରୁ ଅଧିକ ଚାଲିଥାଏ\n- ବାନ୍ତିରେ ରକ୍ତ ବା ଗାଢ଼ା ପଦାର୍ଥ ଥାଏ\n- ଗୁରୁତର ଦୁର୍ବଳତା, ମୁଣ୍ଡଘୁରା, ବା ଜଳକ୍ଷୟ ହୁଏ\n- ପିଲା, ବୃଦ୍ଧ ବ୍ୟକ୍ତି, ବା ଗର୍ଭବତୀ ମହିଳାରେ ବାନ୍ତି ହୁଏ\n- ଗୁରୁତର ପେଟ ବେଦନା ବା ଜ୍ୱର ସହିତ ବାନ୍ତି ହୁଏ"
+    },
+    {
+      "condition": "Sore Throat",
+      "priority": "medium",
+      "keywords": [
+        "sore throat",
+        "throat pain",
+        "gala dard",
+        "throat ache",
+        "pain in throat",
+        "gala dukh raha hai",
+        "gale mein dard",
+        "gale ka dard",
+        "gala kharab",
+        "throat infection",
+        "throat irritation",
+        "throat burning",
+        "scratchy throat",
+        "pain while swallowing",
+        "difficulty swallowing",
+        "throt pain",
+        "sorethroat",
+        "throatpane",
+        "galadard",
+        "dry throat",
+        "itchy throat",
+        "hoarse voice"
+      ],
+      "response": "Sore throat may be due to cold, infection, allergy, or irritation.\n\nCare Steps:\n1. Gargle with warm salt water 2–3 times daily.\n2. Drink warm fluids.\n3. Avoid cold drinks and smoking.\n4. Rest your voice.\n\n⚠️ Consult a doctor if:\n- Throat pain is severe or lasts more than 3 days\n- Fever, swelling, or pus appears\n- Difficulty breathing or swallowing occurs\n- Child or elderly person is affected",
+      "response_or": "ଗଳା ବେଦନା ସର୍ଦ୍ଦି, ସଂକ୍ରମଣ, ଏଲର୍ଜି, ବା ଜ୍ୱାଳା କାରଣରୁ ହୋଇପାରେ।\n\nଯତ୍ନ ପଦକ୍ଷେପ:\n1. ଗରମ ଲୁଣ ପାଣିରେ 2-3 ଥର ଦିନକୁ ଗାର୍ଗଲ୍ କରନ୍ତୁ।\n2. ଗରମ ପାଣୀୟ ପିଅନ୍ତୁ।\n3. ଠଣ୍ଡା ପାଣୀୟ ଏବଂ ଧୂମପାନରୁ ଦୂରେଇ ରୁହନ୍ତୁ।\n4. ଆପଣଙ୍କ ସ୍ୱରକୁ ବିଶ୍ରାମ ଦିଅନ୍ତୁ।\n\n⚠️ ଡାକ୍ତରଙ୍କ ସହ ପରାମର୍ଶ କରନ୍ତୁ ଯଦି:\n- ଗଳା ବେଦନା ଗୁରୁତର ବା 3 ଦିନରୁ ଅଧିକ ରହିଥାଏ\n- ଜ୍ୱର, ଫୋଲା, ବା ପୁଜ୍ ଦେଖାଦେଇଥାଏ\n- ଶ୍ୱାସ ନେବା ବା ଗିଳିବାରେ କଷ୍ଟ ହୁଏ\n- ପିଲା ବା ବୃଦ୍ଧ ବ୍ୟକ୍ତି ପ୍ରଭାବିତ ହୁଅନ୍ତି"
+    },
+    {
+      "condition": "Body Pain / Body Ache",
+      "priority": "medium",
+      "keywords": [
+        "body pain",
+        "body ache",
+        "body aches",
+        "muscle pain",
+        "muscle ache",
+        "muscle soreness",
+        "joint pain",
+        "bone pain",
+        "full body pain",
+        "whole body pain",
+        "pain all over body",
+        "pain in whole body",
+        "pain in entire body",
+        "body stiffness",
+        "body soreness",
+        "body weakness",
+        "weak body pain",
+        "sarir dard",
+        "shareer dard",
+        "sharir dard",
+        "jism dard",
+        "poora badan dard",
+        "pure body pain",
+        "badan dard",
+        "bodypain",
+        "body achee",
+        "body ache pain",
+        "musclepain",
+        "muscel pain",
+        "mussle pain",
+        "leg pain",
+        "arm pain",
+        "hand pain",
+        "foot pain",
+        "neck pain",
+        "shoulder pain",
+        "back pain",
+        "lower back pain",
+        "upper back pain",
+        "pain after work",
+        "pain after exercise",
+        "workout pain",
+        "overwork pain"
+      ],
+      "response": "Body pain can occur due to fever, overwork, muscle strain, dehydration, vitamin deficiency, or infection.\n\nCare Steps:\n1. Take adequate rest.\n2. Drink plenty of fluids.\n3. Do gentle stretching if comfortable.\n4. Use warm compress if it helps.\n5. Avoid heavy physical activity temporarily.\n\n⚠️ Consult a doctor if:\n- Pain is severe or persistent\n- Pain lasts more than 3 days\n- Pain occurs with fever, swelling, numbness, or weakness\n- Child or elderly person has severe body pain",
+      "response_or": "ଶରୀର ବେଦନା ଜ୍ୱର, ଅତ୍ୟଧିକ କାମ, ମାଂସପେଶୀ ଖିଞ୍ଚିବା, ଜଳକ୍ଷୟ, ଭିଟାମିନ୍ ଅଭାବ, ବା ସଂକ୍ରମଣ କାରଣରୁ ହୋଇପାରେ।\n\nଯତ୍ନ ପଦକ୍ଷେପ:\n1. ପର୍ଯ୍ୟାପ୍ତ ବିଶ୍ରାମ କରନ୍ତୁ।\n2. ପ୍ରଚୁର ପାଣୀୟ ପିଅନ୍ତୁ।\n3. ଆରାମଦାୟକ ହେଲେ ହାଲୁକା ଖିଞ୍ଚିବା କରନ୍ତୁ।\n4. ଗରମ କମ୍ପ୍ରେସ୍ ସାହାଯ୍ୟ କରେ ତ ବ୍ୟବହାର କରନ୍ତୁ।\n5. କିଛି ସମୟ ପାଇଁ ଭାରୀ ଶାରୀରିକ କାର୍ଯ୍ୟରୁ ଦୂରେଇ ରୁହନ୍ତୁ।\n\n⚠️ ଡାକ୍ତରଙ୍କ ସହ ପରାମର୍ଶ କରନ୍ତୁ ଯଦି:\n- ବେଦନା ଗୁରୁତର ବା ନିରନ୍ତର୍ୟ\n- ବେଦନା 3 ଦିନରୁ ଅଧିକ ରହିଥାଏ\n- ଜ୍ୱର, ଫୋଲା, ଅସାଧାରଣ ଅନୁଭୂତି, ବା ଦୁର୍ବଳତା ସହିତ ବେଦନା ହୁଏ\n- ପିଲା ବା ବୃଦ୍ଧ ବ୍ୟକ୍ତିରେ ଗୁରୁତର ଶରୀର ବେଦନା ହୁଏ"
+    },
+    {
+      "condition": "Toothache / Dental Pain",
+      "priority": "medium",
+      "keywords": [
+        "toothache",
+        "tooth pain",
+        "dental pain",
+        "tooth ache",
+        "gum pain",
+        "gum swelling",
+        "gum infection",
+        "tooth cavity",
+        "dental cavity",
+        "cavity pain",
+        "daant dard",
+        "daant mein dard",
+        "daant dukh raha hai",
+        "toothpain",
+        "toothpain",
+        "tooth pan",
+        "tooth pian",
+        "jaw pain",
+        "pain in tooth",
+        "pain in teeth"
+      ],
+      "response": "Tooth pain often indicates cavity, gum infection, or dental decay.\n\nCare Steps:\n1. Rinse mouth with warm salt water.\n2. Avoid very hot, cold, or sugary food.\n3. Maintain proper oral hygiene.\n4. Avoid chewing on the painful side.\n\n⚠️ Visit a dentist immediately if:\n- Pain is severe or persistent\n- Swelling, pus, or fever develops\n- Difficulty opening mouth or swallowing occurs",
+      "response_or": "ଦାନ୍ତ ବେଦନା ପ୍ରାୟତଃ ଗହ୍ମା, ଗମ୍ ସଂକ୍ରମଣ, ବା ଦାନ୍ତ କ୍ଷୟକୁ ସୂଚିତ କରେ।\n\nଯତ୍ନ ପଦକ୍ଷେପ:\n1. ଗରମ ଲୁଣ ପାଣିରେ ମୁହଁ ଧୋଇବା।\n2. ଅତ୍ୟଧିକ ଗରମ, ଠଣ୍ଡା, ବା ମିଠା ଖାଦ୍ୟରୁ ଦୂରେଇ ରୁହନ୍ତୁ।\n3. ଭଲ ମୁଖ ସ୍ୱଚ୍ଛତା ବଜାୟ ରଖନ୍ତୁ।\n4. ବେଦନାଦାୟକ ପଟରେ ଚିବାଇବାରୁ ଦୂରେଇ ରୁହନ୍ତୁ।\n\n⚠️ ତୁରନ୍ତ ଦନ୍ତଚିକିତ୍ସକଙ୍କ ସହ ଯୋଗାଯୋଗ କରନ୍ତୁ ଯଦି:\n- ବେଦନା ଗୁରୁତର ବା ନିରନ୍ତର୍ୟ\n- ଫୋଲା, ପୁଜ୍, ବା ଜ୍ୱର ବିକାଶ ହୁଏ\n- ମୁହଁ ଖୋଲିବା ବା ଗିଳିବାରେ କଷ୍ଟ ହୁଏ"
+    },
+    {
+      "condition": "Burn (Minor)",
+      "priority": "medium",
+      "keywords": [
+        "burn",
+        "minor burn",
+        "burn injury",
+        "skin burn",
+        "fire burn",
+        "hot water burn",
+        "steam burn",
+        "oil burn",
+        "burn on hand",
+        "burn on finger",
+        "burn on leg",
+        "burn on arm",
+        "jalna",
+        "jal gaya",
+        "jala hua",
+        "aag se jalna",
+        "garam pani se jalna",
+        "burning skin",
+        "burn pain",
+        "bern",
+        "burne",
+        "burning"
+      ],
+      "response": "Minor burns need immediate cooling.\n\nFirst Aid Steps:\n1. Cool the burn with running clean water for 10–15 minutes.\n2. Do NOT apply ice, toothpaste, oil, butter, or home remedies.\n3. Cover loosely with a clean, dry cloth.\n\n⚠️ Seek medical help immediately if:\n- Burn is large, deep, or blistered\n- Burn involves face, hands, feet, genitals, or joints\n- Burn is caused by electricity or chemicals\n- Person is a child or elderly"
+    },
+    {
+      "condition": "Medical Emergency",
+      "priority": "high",
+      "keywords": [
+        "chest pain",
+        "severe chest pain",
+        "heart attack",
+        "heartattack",
+        "hart attack",
+        "cardiac pain",
+        "chestpain",
+        "difficulty breathing",
+        "breathing difficulty",
+        "shortness of breath",
+        "breathlessness",
+        "saans nahi aa rahi",
+        "saans lene mein dikkat",
+        "brething problem",
+        "brething difficulty",
+        "unconscious",
+        "passed out",
+        "fainted",
+        "behosh",
+        "unconsious",
+        "unconciouse",
+        "bleeding",
+        "severe bleeding",
+        "heavy bleeding",
+        "blood loss",
+        "bleeding injury",
+        "bleeding badly",
+        "sudden weakness",
+        "collapse",
+        "body collapse"
+      ],
+      "response": "⚠️ MEDICAL EMERGENCY DETECTED ⚠️\n\nImmediate Actions:\n1. Call local emergency services or go to the nearest hospital IMMEDIATELY.\n2. Do NOT delay or wait for symptoms to improve.\n3. Keep the person calm and still.\n4. If unconscious, lay them on their side and check breathing.\n5. If chest pain or breathing difficulty, loosen tight clothing.\n6. Do NOT give food, water, or medicines.\n\n⚠️ Warning Signs Present:\n- Chest pain\n- Difficulty breathing\n- Unconsciousness\n- Severe bleeding\n- Sudden weakness\n\nThese symptoms can be life-threatening. Only emergency medical professionals can treat this safely.",
+      "response_or": "⚠️ ଡାକ୍ତରୀ ଜରୁରୀକାଳୀନ ଅବସ୍ଥା ଚିହ୍ନଟ ହୋଇଛି ⚠️\n\nତୁରନ୍ତ କାର୍ଯ୍ୟ:\n1. ସ୍ଥାନୀୟ ଜରୁରୀକାଳୀନ ସେବାକୁ କଲ୍ କରନ୍ତୁ ବା ନିକଟତମ ହସ୍ପିଟାଲ୍କୁ ଯାଆନ୍ତୁ।\n2. ଲକ୍ଷଣ ଭଲ ହେବା ପର୍ଯ୍ୟନ୍ତ ଅପେକ୍ଷା କରନ୍ତୁ ନାହିଁ।\n3. ବ୍ୟକ୍ତିକୁ ଶାନ୍ତ ଏବଂ ସ୍ଥିର ରଖନ୍ତୁ।\n4. ଯଦି ଅସୁଚେତନା, ପାଖରେ ଶୋଇବା ଏବଂ ଶ୍ୱାସ ଯାଞ୍ଚ କରନ୍ତୁ।\n5. ଯଦି ଛାତି ବେଦନା ବା ଶ୍ୱାସ କଷ୍ଟ, ଟାଇଟ୍ କପଡ଼ା ଢିଲା କରନ୍ତୁ।\n6. ଖାଦ୍ୟ, ପାଣି, ବା ଔଷଧ ଦିଅନ୍ତୁ ନାହିଁ।\n\n⚠️ ଚେତାବନୀ ଚିହ୍ନ ଉପସ୍ଥିତ:\n- ଛାତି ବେଦନା\n- ଶ୍ୱାସ ନେବାରେ କଷ୍ଟ\n- ଅସୁଚେତନା\n- ଗୁରୁତର ରକ୍ତସ୍ରାବ\n- ହଠାତ୍ ଦୁର୍ବଳତା\n\nଏହି ଲକ୍ଷଣଗୁଡ଼ିକ ଜୀବନ-ବିନାଶକାରୀ ହୋଇପାରେ। କେବଳ ଜରୁରୀକାଳୀନ ଡାକ୍ତରୀ ବୃତ୍ତିଜୀବୀମାନେ ଏହାକୁ ସୁରକ୍ଷିତ ଭାବେ ଚିକିତ୍ସା କରିପାରିବେ।"
+    },
+    {
+      "condition": "Fever",
+      "priority": "medium",
+      "keywords": [
+        "fever",
+        "bukhar",
+        "temperature",
+        "high fever",
+        "low fever",
+        "mild fever",
+        "severe fever",
+        "continuous fever",
+        "persistent fever",
+        "high temperature",
+        "body temperature",
+        "raised temperature",
+        "bukhar tez",
+        "tez bukhar",
+        "bukhar jyada",
+        "bukhar lag raha hai",
+        "feverish",
+        "fever feel",
+        "fever feeling",
+        "buker",
+        "bukerh",
+        "fevr",
+        "feaver",
+        "temprature",
+        "temparature",
+        "tempereture",
+        "fever with body pain",
+        "fever and weakness",
+        "fever with chills",
+        "fever with headache",
+        "fever with cough",
+        "nose running"
+      ],
+      "response": "Fever (bukhar/temperature) is commonly caused by viral or bacterial infections. Take adequate rest, drink plenty of fluids (water, ORS, warm liquids), and monitor the temperature regularly. You may take fever-reducing medicine if advised by a doctor.\n\n⚠️ Consult a doctor immediately if:\n• Fever lasts more than 3 days\n• Temperature is above 102°F (39°C)\n• Severe body pain, weakness, vomiting, or rashes occur\n• The patient is a child, elderly person, or has existing health conditions\n• Fever is continuous or worsening\n\n🚑 Seek emergency care if fever is accompanied by difficulty breathing, confusion, seizures, or severe chest pain.",
+      "response_or": "ଜ୍ୱର (ବୁଖାର/ତାପନ) ସାଧାରଣତଃ ଭାଇରାଲ୍ ବା ବ୍ୟାକ୍ଟେରିଆଲ୍ ସଂକ୍ରମଣ ଦ୍ୱାରା ହୁଏ। ପର୍ଯ୍ୟାପ୍ତ ବିଶ୍ରାମ କରନ୍ତୁ, ପ୍ରଚୁର ପରିମାଣରେ ପାଣୀୟ (ପାଣି, ORS, ଗରମ ପାଣୀୟ) ପିଅନ୍ତୁ, ଏବଂ ନିୟମିତ ଭାବେ ତାପନ ମାପନ୍ତୁ। ଡାକ୍ତରଙ୍କ ପରାମର୍ଶ ଅନୁସାରେ ଜ୍ୱର କମାଇବା ଔଷଧ ନେଇପାରନ୍ତି।\n\n⚠️ ତୁରନ୍ତ ଡାକ୍ତରଙ୍କ ସହ ପରାମର୍ଶ କରନ୍ତୁ ଯଦି:\n• ଜ୍ୱର 3 ଦିନରୁ ଅଧିକ ସମୟ ରହିଥାଏ\n• ତାପନ 102°F (39°C) ରୁ ଅଧିକ ହୁଏ\n• ଗୁରୁତର ଶରୀର ବେଦନା, ଦୁର୍ବଳତା, ବାନ୍ତି, ବା ଚୁଲୁକାଣି ହୁଏ\n• ରୋଗୀ ପିଲା, ବୃଦ୍ଧ ବ୍ୟକ୍ତି, ବା ପୂର୍ବରୁ ସ୍ୱାସ୍ଥ୍ୟ ସମସ୍ୟା ଥିବା ବ୍ୟକ୍ତି\n• ଜ୍ୱର ନିରନ୍ତର୍ୟ ବା ଖରାପ ହେଉଛି\n\n🚑 ଜରୁରୀକାଳୀନ ସେବା ନିଅନ୍ତୁ ଯଦି ଜ୍ୱର ସହିତ ଶ୍ୱାସ ନେବାରେ କଷ୍ଟ, ଅସ୍ପଷ୍ଟ ଚେତନା, ଖିଚିଯିବା, ବା ଗୁରୁତର ଛାତି ବେଦନା ହୁଏ।"
+    },
+    {
+      "condition": "Cough",
+      "priority": "medium",
+      "keywords": [
+        "cough",
+        "khansi",
+        "dry cough",
+        "wet cough",
+        "productive cough",
+        "persistent cough",
+        "chronic cough",
+        "severe cough",
+        "severe khansi",
+        "bad cough",
+        "heavy cough",
+        "caugh",
+        "cof",
+        "coff",
+        "kansi",
+        "khasi",
+        "khansi",
+        "khansi lag rahi hai",
+        "throat cough",
+        "chest cough",
+        "irritation cough",
+        "cough with fever",
+        "cough and weakness",
+        "cough and body pain",
+        "cough and headache",
+        "night cough",
+        "cough at night",
+        "morning cough",
+        "allergy cough",
+        "cold cough",
+        "viral cough",
+        "smoker cough",
+        "cough problem",
+        "continuous coughing",
+        "lot of cough",
+        "too much cough"
+      ],
+      "response": "Cough (khansi) is a common reflex that helps clear mucus, irritants, or infections from the throat and airways. It may occur due to common cold, viral infections, allergies, pollution, smoking, throat irritation, or respiratory infections.\n\nPossible Symptoms Associated with Cough:\n• Dry or productive cough\n• Throat irritation or soreness\n• Mild fever or fatigue\n• Chest discomfort\n\nRecommended Self-Care Measures:\n1. Drink plenty of warm fluids such as water, herbal tea, or soup to soothe the throat.\n2. Perform steam inhalation 1–2 times daily to help loosen mucus and ease breathing.\n3. Avoid cold beverages, dust, smoke, and other irritants.\n4. Get adequate rest and maintain good hydration.\n5. Use honey with warm water (if suitable) to help reduce throat irritation.\n\n⚠️ Seek medical attention if:\n• Cough lasts longer than 7–10 days\n• You experience high fever, chest pain, or difficulty breathing\n• Blood appears in the cough\n• Severe weakness or wheezing develops\n• A child, elderly person, or patient with chronic illness has persistent cough\n\nNote: This information is for general guidance only and should not replace professional medical advice.",
+      "response_or": "କାଶ (ଖାନ୍ସି) ଏକ ସାଧାରଣ ପ୍ରତିକ୍ରିୟା ଯାହା ଗଳା ଏବଂ ଶ୍ୱାସନଳୀରୁ କଫ, ଜ୍ୱାଳାକାରୀ ପଦାର୍ଥ, ବା ସଂକ୍ରମଣକୁ ସଫା କରିବାରେ ସାହାଯ୍ୟ କରେ। ଏହା ସାଧାରଣ ସର୍ଦ୍ଦି, ଭାଇରାଲ୍ ସଂକ୍ରମଣ, ଏଲର୍ଜି, ଦୂଷଣ, ଧୂମପାନ, ଗଳା ଜ୍ୱାଳା, ବା ଶ୍ୱାସନଳୀ ସଂକ୍ରମଣ କାରଣରୁ ହୋଇପାରେ।\n\nକାଶ ସହିତ ସମ୍ଭାବ୍ୟ ଲକ୍ଷଣ:\n• ଶୁଷ୍କ ବା ଉତ୍ପାଦନକାରୀ କାଶ\n• ଗଳା ଜ୍ୱାଳା ବା ବେଦନା\n• ହାଲୁକା ଜ୍ୱର ବା କ୍ଲାନ୍ତି\n• ଛାତି ଅସୁବିଧା\n\nସ୍ୱୟଂ-ଯତ୍ନ ପଦକ୍ଷେପ:\n1. ଗଳାକୁ ଆରାମ ଦେବା ପାଇଁ ପାଣି, ହର୍ବାଲ୍ ଚା, ବା ସୁପ୍ ଭଳି ଗରମ ପାଣୀୟ ପ୍ରଚୁର ପରିମାଣରେ ପିଅନ୍ତୁ।\n2. କଫକୁ ଢିଲା କରିବା ଏବଂ ଶ୍ୱାସ ନେବାକୁ ସହଜ କରିବା ପାଇଁ ଦିନକୁ 1-2 ଥର ଭାପ ନେବା କରନ୍ତୁ।\n3. ଠଣ୍ଡା ପାଣୀୟ, ଧୂଳି, ଧୂମ, ଏବଂ ଅନ୍ୟ ଜ୍ୱାଳାକାରୀ ପଦାର୍ଥରୁ ଦୂରେଇ ରୁହନ୍ତୁ।\n4. ପର୍ଯ୍ୟାପ୍ତ ବିଶ୍ରାମ ନିଅନ୍ତୁ ଏବଂ ଭଲ ଜଳସଞ୍ଚାଳନ ବଜାୟ ରଖନ୍ତୁ।\n5. ଗଳା ଜ୍ୱାଳା କମାଇବା ପାଇଁ ଗରମ ପାଣିରେ ମହୁ (ଯଦି ଉପଯୁକ୍ତ) ବ୍ୟବହାର କରନ୍ତୁ।\n\n⚠️ ଡାକ୍ତରୀ ସହାୟତା ନିଅନ୍ତୁ ଯଦି:\n• କାଶ 7-10 ଦିନରୁ ଅଧିକ ରହିଥାଏ\n• ଉଚ୍ଚ ଜ୍ୱର, ଛାତି ବେଦନା, ବା ଶ୍ୱାସ ନେବାରେ କଷ୍ଟ ଅନୁଭବ କରନ୍ତି\n• କାଶରେ ରକ୍ତ ଦେଖାଦେଇଥାଏ\n• ଗୁରୁତର ଦୁର୍ବଳତା ବା ଶ୍ୱାସକଷ୍ଟ ବିକାଶ ହୁଏ\n• ପିଲା, ବୃଦ୍ଧ ବ୍ୟକ୍ତି, ବା ଦୀର୍ଘକାଳୀନ ରୋଗ ଥିବା ରୋଗୀରେ ନିରନ୍ତର୍ୟ କାଶ ରହିଥାଏ\n\nଟିପ୍ପଣୀ: ଏହି ସୂଚନା କେବଳ ସାଧାରଣ ମାର୍ଗଦର୍ଶନ ପାଇଁ ଏବଂ ଏହା ବୃତ୍ତିଗତ ଡାକ୍ତରୀ ପରାମର୍ଶକୁ ବଦଳିପାରିବ ନାହିଁ।"
+    },
+    {
+      "condition": "Headache",
+      "priority": "medium",
+      "keywords": [
+        "headache",
+        "head ache",
+        "hedache",
+        "hed ache",
+        "headach",
+        "headpain",
+        "head pain",
+        "sir dard",
+        "sirdard",
+        "sirderd",
+        "sirdardd",
+        "severe headache",
+        "severe sir dard",
+        "migraine",
+        "migrane",
+        "migrain"
+      ],
+      "response": "A headache (commonly called 'sir dard') is a common condition that can occur due to several factors such as stress, dehydration, lack of sleep, eye strain, fever, sinus infection, or migraine.\n\nPossible Causes:\n• Stress or mental fatigue\n• Lack of sleep\n• Dehydration\n• Excessive screen time\n• Sinus infection or fever\n• Migraine\n\nImmediate Self-Care Steps:\n1. Rest in a quiet and dimly lit room.\n2. Drink plenty of water to prevent dehydration.\n3. Reduce screen exposure (mobile, computer, TV).\n4. Apply a cold or warm compress to the forehead or neck.\n5. Ensure adequate sleep and relaxation.\n6. If necessary, a mild pain reliever such as paracetamol may help (unless contraindicated).\n\n⚠️ Seek medical attention immediately if:\n• The headache is sudden and extremely severe\n• It persists for more than 48 hours\n• It is accompanied by fever, vomiting, vision problems, weakness, or confusion\n• It occurs after a head injury\n• The headache is frequent or worsening over time\n• A child or elderly person experiences persistent headache",
+      "response_or": "ମୁଣ୍ଡବିନ୍ଧା (ସାଧାରଣତଃ 'ଶିର ଦର୍ଦ' କୁହାଯାଏ) ଏକ ସାଧାରଣ ଅବସ୍ଥା ଯାହା ଚାପ, ଜଳକ୍ଷୟ, ନିଦ୍ରା ଅଭାବ, ଆଖି କ୍ଷୟ, ଜ୍ୱର, ସାଇନସ୍ ସଂକ୍ରମଣ, ବା ମାଇଗ୍ରେନ୍ ଭଳି ବିଭିନ୍ନ କାରଣରୁ ହୋଇପାରେ।\n\nସମ୍ଭାବ୍ୟ କାରଣ:\n• ଚାପ ବା ମାନସିକ କ୍ଲାନ୍ତି\n• ନିଦ୍ରା ଅଭାବ\n• ଜଳକ୍ଷୟ\n• ଅତ୍ୟଧିକ ସ୍କ୍ରିନ୍ ସମୟ\n• ସାଇନସ୍ ସଂକ୍ରମଣ ବା ଜ୍ୱର\n• ମାଇଗ୍ରେନ୍\n\nତୁରନ୍ତ ସ୍ୱୟଂ-ଯତ୍ନ ପଦକ୍ଷେପ:\n1. ଶାନ୍ତ ଏବଂ ଅଳ୍ପ ଆଲୋକିତ କୋଠରୀରେ ବିଶ୍ରାମ କରନ୍ତୁ।\n2. ଜଳକ୍ଷୟ ରୋକିବା ପାଇଁ ପ୍ରଚୁର ପାଣି ପିଅନ୍ତୁ।\n3. ସ୍କ୍ରିନ୍ ଏକ୍ସପୋଜର୍ କମାନ୍ତୁ (ମୋବାଇଲ୍, କମ୍ପ୍ୟୁଟର, TV)।\n4. କପାଳ ବା ଘାଡ଼ରେ ଠଣ୍ଡା ବା ଗରମ କମ୍ପ୍ରେସ୍ ଲଗାନ୍ତୁ।\n5. ପର୍ଯ୍ୟାପ୍ତ ନିଦ୍ରା ଏବଂ ଆରାମ ନିଶ୍ଚିତ କରନ୍ତୁ।\n6. ଆବଶ୍ୟକ ହେଲେ, ପାରାସିଟାମଲ୍ ଭଳି ଏକ ହାଲୁକା ବେଦନା କମାଇବା ଔଷଧ ସାହାଯ୍ୟ କରିପାରେ (ଯଦି ନିଷେଧ ନାହିଁ)।\n\n⚠️ ତୁରନ୍ତ ଡାକ୍ତରୀ ସହାୟତା ନିଅନ୍ତୁ ଯଦି:\n• ମୁଣ୍ଡବିନ୍ଧା ହଠାତ୍ ଏବଂ ଅତ୍ୟନ୍ତ ଗୁରୁତର\n• ଏହା 48 ଘଣ୍ଟାରୁ ଅଧିକ ସମୟ ରହିଥାଏ\n• ଜ୍ୱର, ବାନ୍ତି, ଦୃଷ୍ଟି ସମସ୍ୟା, ଦୁର୍ବଳତା, ବା ଅସ୍ପଷ୍ଟ ଚେତନା ସହିତ ଥାଏ\n• ମୁଣ୍ଡରେ ଆଘାତ ପରେ ହୁଏ\n• ମୁଣ୍ଡବିନ୍ଧା ବାରମ୍ବାର ବା ସମୟ ସହିତ ଖରାପ ହେଉଛି\n• ପିଲା ବା ବୃଦ୍ଧ ବ୍ୟକ୍ତିରେ ନିରନ୍ତର୍ୟ ମୁଣ୍ଡବିନ୍ଧା ହୁଏ"
+    },
+    {
+      "condition": "Abdominal / Stomach Pain",
+      "priority": "medium",
+      "keywords": [
+        "stomach pain",
+        "abdominal pain",
+        "pet dard",
+        "severe stomach pain",
+        "severe abdominal pain",
+        "gas pain",
+        "indigestion",
+        "acidity"
+      ],
+      "response": "Stomach pain (pet dard / abdominal pain) can occur due to indigestion, gas, food infection, acidity, or stress.\n\nHome Care Steps:\n1. Eat light and easily digestible food (rice, banana, curd, toast).\n2. Drink warm water and stay hydrated.\n3. Avoid oily, spicy, and outside food.\n4. Rest and avoid heavy physical activity.\n5. Do not lie down immediately after eating.\n\n⚠️ Consult a doctor immediately if:\n- Pain is severe, sudden, or continuous\n- Pain lasts more than 2 days\n- Pain is accompanied by fever, vomiting, weakness, or body pain\n- Blood is present in stool or vomiting\n- Child, elderly person, or pregnant woman has abdominal pain"
+    },
+    {
+      "condition": "Stroke (Brain Attack)",
+      "keywords": [
+        "stroke",
+        "brain attack",
+        "face drooping",
+        "speech problem",
+        "one side weakness",
+        "sudden paralysis",
+        "lakwa",
+        "aadha sharir kamzor",
+        "bolne mein dikkat",
+        "munh tedha",
+        "achanak lakwa",
+        "chehre ka jhukna",
+        "aadha chehra jhukna",
+        "aadha munh jhukna",
+        "bolne mein problem",
+        "ek side kamzor",
+        "achanak chehra jhukna",
+        "achanak bolne mein dikkat",
+        "achanak ek side kamzor",
+        "achanak aadha sharir kamzor",
+        "achanak munh tedha",
+        "achanak aadha chehra jhukna",
+        "achanak bolne mein problem",
+        "achanak aadha munh jhukna",
+        "brain attack",
+        "face droop",
+        "speech difficulty",
+        "one side body weakness",
+        "sudden one side weakness",
+        "sudden face drooping",
+        "sudden speech problem",
+        "sudden brain attack",
+        "sudden lakwa",
+        "sudden aadha sharir kamzor",
+        "sudden bolne mein dikkat",
+        "sudden munh tedha",
+        "sudden aadha chehra jhukna",
+        "sudden bolne mein problem",
+        "sudden aadha munh jhukna"
+      ],
+      "priority": "high",
+      "response": "⚠️ STROKE EMERGENCY\n\nFirst Aid (DO):\n1. Call emergency services immediately.\n2. Keep the person lying on their side.\n3. Loosen tight clothing.\n4. Keep the person calm and still.\n\nDO NOT:\n- Give food, water, or medicines.\n- Delay hospital visit.\n\n➡️ First aid helps prevent choking only. Immediate hospital treatment is critical."
+    },
+    {
+      "condition": "Seizure / Fits",
+      "keywords": [
+        "seizure",
+        "fits",
+        "convulsions",
+        "shaking body",
+        "foam from mouth",
+        "mirgi",
+        "daura",
+        "jhatke",
+        "kampan",
+        "mooh se jhaag",
+        "achanak jhatke",
+        "achanak kampan",
+        "achanak foam from mouth",
+        "achanak daura",
+        "sudden seizure",
+        "sudden fits",
+        "sudden convulsions",
+        "sudden shaking body",
+        "sudden foam from mouth",
+        "sudden mirgi",
+        "sudden daura",
+        "sudden jhatke",
+        "sudden kampan",
+        "sudden mooh se jhaag",
+        "shaking body suddenly",
+        "foam from mouth suddenly"
+      ],
+      "priority": "high",
+      "response": "⚠️ SEIZURE EMERGENCY\n\nFirst Aid (DO):\n1. Lay the person on their side.\n2. Remove sharp or dangerous objects nearby.\n3. Loosen tight clothing.\n4. Note the duration of seizure.\n\nDO NOT:\n- Put anything in the mouth.\n- Hold the person forcefully.\n- Give food or water.\n\n➡️ Call emergency services if seizure lasts more than 5 minutes."
+    },
+    {
+      "condition": "Severe Bleeding",
+      "priority": "high",
+      "keywords": [
+        "bleeding",
+        "severe bleeding",
+        "heavy bleeding",
+        "blood loss",
+        "bleeding injury",
+        "gehra zakhm",
+        "khoon beh raha hai",
+        "zyada khoon behna",
+        "bahut bleeding"
+      ],
+      "response": "⚠️ SEVERE BLEEDING EMERGENCY\n\nFirst Aid (DO):\n1. Apply firm pressure using a clean cloth.\n2. Raise the injured part if possible.\n3. Keep the person lying down.\n\nDO NOT:\n- Remove objects stuck in the wound.\n- Wash deep wounds heavily.\n\n➡️ This first aid can save life. Go to hospital immediately."
+    },
+    {
+      "condition": "Unconscious Person",
+      "keywords": [
+        "unconscious",
+        "fainted",
+        "not responding",
+        "behosh",
+        "housh nahi",
+        "sudden behoshi",
+        "housh kho jana"
+      ],
+      "priority": "high",
+      "response": "⚠️ UNCONSCIOUS PERSON\n\nFirst Aid (DO):\n1. Check breathing.\n2. Place the person in recovery position (side-lying).\n3. Keep airway open.\n\nDO NOT:\n- Shake the person.\n- Give food or water.\n\n➡️ Call emergency services immediately."
+    },
+    {
+      "condition": "Difficulty Breathing",
+      "keywords": [
+        "difficulty breathing",
+        "shortness of breath",
+        "breathing problem",
+        "saans lene mein dikkat",
+        "saans phoolna",
+        "saans nahi aa rahi",
+        "ghutan"
+      ],
+      "priority": "high",
+      "response": "⚠️ BREATHING EMERGENCY\n\nFirst Aid (DO):\n1. Sit the person upright.\n2. Loosen tight clothing.\n3. Ensure fresh air.\n\nDO NOT:\n- Force the person to lie flat.\n- Give food or water.\n\n➡️ Immediate hospital care required."
+    },
+    {
+      "condition": "Severe Allergic Reaction",
+      "keywords": [
+        "allergic reaction",
+        "swelling lips",
+        "swelling face",
+        "throat swelling",
+        "anaphylaxis",
+        "allergy",
+        "chehra sujan",
+        "honth sujan",
+        "gala band hona",
+        "allergic problem"
+      ],
+      "priority": "high",
+      "response": "⚠️ SEVERE ALLERGIC REACTION\n\nFirst Aid (DO):\n1. Remove allergen if visible.\n2. Keep the person sitting or lying comfortably.\n3. Call emergency services immediately.\n\nDO NOT:\n- Ignore swelling of lips or throat.\n- Delay medical help.\n\n➡️ This condition can block breathing rapidly."
+    },
+    {
+      "condition": "Poisoning",
+      "keywords": [
+        "poisoning",
+        "swallowed poison",
+        "medicine overdose",
+        "pesticide ingestion",
+        "zehar",
+        "zehar kha liya",
+        "dawai zyada le li",
+        "keetanashak",
+        "zehar peena",
+        "dawai ka overdose",
+        "pesticide peena",
+        "achanak zehar peena",
+        "achanak dawai zyada le li",
+        "achanak pesticide peena",
+        "sudden poisoning",
+        "sudden swallowed poison",
+        "sudden medicine overdose",
+        "sudden pesticide ingestion",
+        "sudden zehar",
+        "sudden zehar kha liya",
+        "sudden dawai zyada le li",
+        "sudden keetanashak"
+      ],
+      "priority": "high",
+      "response": "⚠️ POISONING EMERGENCY\n\nFirst Aid (DO):\n1. Call emergency services or poison helpline immediately.\n2. Keep the poison container with you.\n\nDO NOT:\n- Induce vomiting.\n- Give milk or water unless instructed by medical professionals.\n\n➡️ Immediate medical help is required."
+    },
+    {
+      "condition": "Burns (Minor to Moderate)",
+      "keywords": [
+        "burn",
+        "fire burn",
+        "hot water burn",
+        "jalna",
+        "aag se jalna",
+        "garam pani se jalna"
+      ],
+      "priority": "medium",
+      "response": "🔥 BURN FIRST AID\n\nFirst Aid (DO):\n1. Cool the burn with running clean water for 10–15 minutes.\n2. Cover loosely with a clean cloth.\n\nDO NOT:\n- Apply ice, oil, butter, or toothpaste.\n\n➡️ Seek medical care if burn is large, deep, or blistered."
+    },
+    {
+      "condition": "Low Blood Sugar (Conscious Diabetic)",
+      "keywords": [
+        "low blood sugar",
+        "hypoglycemia",
+        "diabetic shaking",
+        "diabetic sweating",
+        "sugar kam",
+        "low sugar",
+        "diabetic ko chakkar",
+        "pasina aa raha hai"
+      ],
+      "priority": "high",
+      "response": "⚠️ LOW BLOOD SUGAR\n\nFirst Aid (DO):\n1. If the person is conscious, give sugar, juice, or glucose immediately.\n2. Let them rest.\n\nDO NOT:\n- Give anything by mouth if unconscious.\n\n➡️ If condition does not improve, go to hospital immediately."
+    },
+    {
+      "condition": "Electric Shock",
+      "priority": "high",
+      "keywords": [
+        "electric shock",
+        "electrocution",
+        "electric accident",
+        "electric burn",
+        "electric shok",
+        "eletric shock",
+        "electrik shock",
+        "electrocuted",
+        "bijli ka jhatka",
+        "bijli lag gayi",
+        "bijli ka current",
+        "current laga",
+        "current lag gaya",
+        "current se jhatka",
+        "bijli se behosh",
+        "shock",
+        "shock laga",
+        "shock lag gaya",
+        "current shock",
+        "short circuit",
+        "short circuit shock",
+        "wire se shock",
+        "open wire",
+        "khula wire",
+        "nanga wire",
+        "plug se shock",
+        "switch se shock",
+        "socket se shock",
+        "unconscious after electric shock",
+        "fainted after electric shock",
+        "burn due to electric shock"
+      ],
+      "response": "⚠️ ELECTRIC SHOCK EMERGENCY\n\nFirst Aid (DO):\n1. Switch OFF the main power supply immediately.\n2. Do NOT touch the person with bare hands if electricity is still flowing.\n3. Use a dry wooden stick, plastic object, or cloth to separate the person from the source.\n4. If unconscious, check breathing and place in recovery position.\n5. Call emergency services immediately.\n\nDO NOT:\n- Touch the person directly while current is ON.\n- Pour water on the person or electrical source.\n- Delay hospital visit.\n\n➡️ Electric shock can cause hidden internal injuries even if there are no visible burns. Medical evaluation is essential."
+    },
+    {
+      "condition": "Severe Asthma Attack",
+      "keywords": [
+        "severe asthma",
+        "asthma attack",
+        "difficulty breathing asthma",
+        "saans phoolna asthma",
+        "asthma problem",
+        "achanak asthma attack",
+        "sudden severe asthma",
+        "sudden asthma attack",
+        "sudden difficulty breathing asthma",
+        "sudden saans phoolna asthma"
+      ],
+      "priority": "high",
+      "response": "⚠️ SEVERE ASTHMA ATTACK\n\nFirst Aid (DO):\n1. Help the person sit upright and stay calm.\n2. Assist them to use their inhaler (bronchodilator) immediately.\n3. Loosen tight clothing.\n4. Call emergency services if no improvement in a few minutes.\n\nDO NOT:\n- Ignore worsening symptoms.\n- Delay medical help.\n\n➡️ Severe asthma attacks can be life-threatening. Immediate treatment is crucial."
+    },
+    {
+      "condition": "Anaphylactic Shock",
+      "keywords": [
+        "anaphylactic shock",
+        "severe allergic reaction",
+        "throat swelling anaphylaxis",
+        "face swelling anaphylaxis",
+        "lips swelling anaphylaxis",
+        "achanak anaphylactic shock",
+        "sudden severe allergic reaction",
+        "sudden throat swelling anaphylaxis",
+        "sudden face swelling anaphylaxis",
+        "sudden lips swelling anaphylaxis"
+      ],
+      "priority": "high",
+      "response": "⚠️ ANAPHYLACTIC SHOCK EMERGENCY\n\nFirst Aid (DO):\n1. Call emergency services immediately.\n2. If the person has an epinephrine auto-injector (EpiPen), help them use it right away.\n3. Keep the person lying down with legs elevated if possible.\n4. Loosen tight clothing and ensure fresh air.\n\nDO NOT:\n- Ignore symptoms of swelling or breathing difficulty.\n- Delay medical help.\n\n➡️ Anaphylactic shock can rapidly block breathing. Immediate medical intervention is critical."
+    },
+    {
+      "condition": "Heat Stroke",
+      "keywords": [
+        "heat stroke",
+        "heat exhaustion",
+        "high body temperature",
+        "dehydration heat stroke",
+        "sunstroke",
+        "garmi se behoshi",
+        "garmi ka jhatka",
+        "achanak heat stroke",
+        "sudden heat exhaustion",
+        "sudden high body temperature",
+        "sudden dehydration heat stroke",
+        "sudden sunstroke",
+        "sudden garmi se behoshi",
+        "sudden garmi ka jhatka",
+        "high temperature due to heat",
+        "dehydration due to heat",
+        "heat stroke due to sun",
+        "heat exhaustion due to sun",
+        "body overheating",
+        "extreme heat exposure",
+        "prolonged sun exposure",
+        "excessive sweating",
+        "dizziness due to heat",
+        "nausea due to heat",
+        "confusion due to heat",
+        "loss of consciousness due to heat",
+        "fainting due to heat",
+        "heat cramps",
+        "muscle cramps due to heat"
+      ],
+      "priority": "high",
+      "response": "⚠️ HEAT STROKE EMERGENCY\n\nFirst Aid (DO):\n1. Move the person to a cooler place immediately.\n2. Remove excess clothing and cool the body with water or wet cloths.\n3. Offer sips of water if the person is conscious.\n4. Call emergency services if symptoms worsen or do not improve quickly.\n\nDO NOT:\n- Leave the person in direct sunlight.\n- Give large amounts of water at once.\n\n➡️ Heat stroke can cause serious complications. Prompt medical care is essential."
+    },
+    {
+      "condition": "Choking (Airway Obstruction)",
+      "keywords": [
+        "choking",
+        "airway obstruction",
+        "food stuck in throat",
+        "saans nahi aa rahi",
+        "gala atakna",
+        "achanak choking",
+        "sudden airway obstruction",
+        "sudden food stuck in throat",
+        "sudden saans nahi aa rahi",
+        "sudden gala atakna",
+        "difficulty breathing after eating",
+        "food blocking airway",
+        "gala mein kuch atak jana",
+        "khane ke baad saans nahi aa rahi",
+        "khane ke baad gala atakna"
+      ],
+      "priority": "high",
+      "response": "⚠️ CHOKING EMERGENCY\n\nFirst Aid (DO):\n1. Encourage coughing if the person can still breathe.\n2. If unable to cough, perform abdominal thrusts (Heimlich maneuver).\n3. Call emergency services if the person becomes unconscious.\n\nDO NOT:\n- Pat the person on the back forcefully.\n- Delay seeking medical help.\n\n➡️ Choking can quickly become life-threatening. Immediate action is necessary."
+    },
+    {
+      "condition": "Severe Head Injury",
+      "keywords": [
+        "severe head injury",
+        "head trauma",
+        "concussion",
+        "bleeding from head",
+        "loss of consciousness head injury",
+        "sir par chot",
+        "sir se khoon behna",
+        "sir par gehra zakhm",
+        "achanak severe head injury",
+        "sudden head trauma",
+        "sudden concussion",
+        "sudden bleeding from head",
+        "sudden loss of consciousness head injury",
+        "sudden sir par chot",
+        "sudden sir se khoon behna",
+        "sudden sir par gehra zakhm"
+      ],
+      "priority": "high",
+      "response": "⚠️ SEVERE HEAD INJURY EMERGENCY\n\nFirst Aid (DO):\n1. Call emergency services immediately.\n2. Keep the person still and avoid moving their head or neck.\n3. If bleeding, apply gentle pressure with a clean cloth.\n4. Monitor breathing and consciousness.\n\nDO NOT:\n- Remove any objects stuck in the wound.\n- Give food or water.\n\n➡️ Head injuries can have serious complications. Immediate medical evaluation is critical."
+    },
+    {
+      "condition": "Viral Infection (General)",
+      "keywords": [
+        "viral infection",
+        "viral fever",
+        "body pain with fever",
+        "fever and weakness",
+        "cold and fever",
+        "viral",
+        "infection fever"
+      ],
+      "priority": "medium",
+      "response": "Viral infection usually causes fever, body pain, weakness, and cold.\n\nCare Steps:\n1. Take proper rest.\n2. Drink plenty of fluids (water, ORS, soups).\n3. Eat light and nutritious food.\n\n⚠️ Consult a doctor if fever lasts more than 3 days or symptoms worsen."
+    },
+    {
+      "condition": "Bacterial Infection",
+      "keywords": [
+        "bacterial infection",
+        "high fever with chills",
+        "fever with pus",
+        "infection not improving",
+        "severe infection"
+      ],
+      "priority": "medium",
+      "response": "Bacterial infections may cause high fever, chills, and worsening symptoms.\n\nCare Steps:\n1. Rest and stay hydrated.\n2. Avoid self-medication.\n\n⚠️ Doctor consultation is necessary for proper treatment."
+    },
+    {
+      "condition": "Respiratory Infection",
+      "keywords": [
+        "chest infection",
+        "lung infection",
+        "breathing infection",
+        "cough with fever",
+        "phlegm with fever",
+        "respiratory infection"
+      ],
+      "priority": "medium",
+      "response": "Respiratory infections can affect lungs and breathing.\n\nCare Steps:\n1. Take rest and drink warm fluids.\n2. Do steam inhalation.\n3. Avoid smoke and cold air.\n\n⚠️ Seek medical help if breathing difficulty or chest pain occurs."
+    },
+    {
+      "condition": "Stomach / Gut Infection",
+      "keywords": [
+        "stomach infection",
+        "food infection",
+        "gastro infection",
+        "vomiting and diarrhea",
+        "loose motion with fever",
+        "pet infection"
+      ],
+      "priority": "medium",
+      "response": "Stomach infection can cause vomiting, diarrhea, and abdominal pain.\n\nCare Steps:\n1. Drink ORS and fluids frequently.\n2. Eat light food.\n3. Maintain hygiene.\n\n⚠️ Consult a doctor if dehydration, blood in stool, or continuous vomiting occurs."
+    },
+    {
+      "condition": "Urinary Tract Infection (UTI)",
+      "keywords": [
+        "urine infection",
+        "uti",
+        "burning urination",
+        "pain while urinating",
+        "frequent urination with pain",
+        "urinary infection"
+      ],
+      "priority": "medium",
+      "response": "Urinary infection can cause burning and pain during urination.\n\nCare Steps:\n1. Drink plenty of water.\n2. Do not hold urine.\n\n⚠️ Doctor consultation is advised, especially if fever or back pain is present."
+    },
+    {
+      "condition": "Skin Infection",
+      "keywords": [
+        "skin infection",
+        "boils",
+        "pus on skin",
+        "red swollen skin",
+        "infected wound"
+      ],
+      "priority": "medium",
+      "response": "Skin infections may cause redness, swelling, pain, or pus.\n\nCare Steps:\n1. Keep area clean and dry.\n2. Avoid scratching.\n\n⚠️ Consult a doctor if swelling increases or fever develops."
+    },
+    {
+      "condition": "Eye Infection",
+      "keywords": [
+        "eye infection",
+        "red eye",
+        "eye pain",
+        "eye discharge",
+        "conjunctivitis"
+      ],
+      "priority": "low",
+      "response": "Eye infection may cause redness, pain, and discharge.\n\nCare Steps:\n1. Avoid touching or rubbing eyes.\n2. Wash hands frequently.\n\n⚠️ See a doctor if vision problems or severe pain occur."
+    },
+    {
+      "condition": "Severe Infection / Sepsis (Emergency)",
+      "keywords": [
+        "infection with unconscious",
+        "high fever with confusion",
+        "infection and breathing fast",
+        "very weak with fever",
+        "sepsis"
+      ],
+      "priority": "high",
+      "response": "⚠️ SEVERE INFECTION EMERGENCY\n\nThis condition can be life-threatening.\n\nImmediate Actions:\n1. Call emergency services immediately.\n2. Keep the person lying down and warm.\n3. Do NOT delay hospital visit.\n\n➡️ Urgent medical treatment is required."
+    },
+    {
+      "condition": "COVID-19 (Coronavirus Infection)",
+      "priority": "medium",
+      "keywords": [
+        "covid",
+        "covid-19",
+        "covid 19",
+        "covid19",
+        "coronavirus",
+        "corona",
+        "corona virus",
+        "coronavirus infection",
+        "covid infection",
+        "tested covid positive",
+        "tested positive for covid",
+        "tested positive for coronavirus",
+        "loss of smell",
+        "loss of taste",
+        "loss of smell and taste",
+        "fever",
+        "cough",
+        "dry cough",
+        "sore throat",
+        "runny nose",
+        "body pain",
+        "headache",
+        "fatigue",
+        "tiredness",
+        "diarrhea",
+        "vomiting",
+        "shortness of breath",
+        "difficulty breathing",
+        "chest tightness"
+      ],
+      "response": "COVID-19 is a viral infection that commonly causes fever, cough, body pain, sore throat, loss of smell or taste, and tiredness.\n\nHome Care / Solution (for mild cases):\n1. Isolate yourself to avoid spreading infection.\n2. Take complete rest and avoid exertion.\n3. Drink plenty of fluids (water, ORS, warm soups).\n4. Eat light, nutritious food.\n5. Wear a mask and maintain hygiene.\n\n⚠️ Seek medical help IMMEDIATELY if:\n- Breathing difficulty or chest pain occurs\n- Oxygen level feels low (severe breathlessness)\n- Fever is very high or lasts more than 3 days\n- Patient is elderly, pregnant, or has diabetes, BP, lung or heart disease\n- Person becomes very weak, confused, or unconscious\n\n➡️ In severe cases, COVID-19 can be life-threatening and needs hospital care.",
+      "response_or": "COVID-19 ଏକ ଭାଇରାଲ୍ ସଂକ୍ରମଣ ଯାହା ସାଧାରଣତଃ ଜ୍ୱର, କାଶ, ଶରୀର ବେଦନା, ଗଳା ବେଦନା, ଗନ୍ଧ ବା ସ୍ୱାଦ ହରାଇବା, ଏବଂ କ୍ଲାନ୍ତି ହୋଇଥାଏ।\n\nଘରୋଇ ଯତ୍ନ / ସମାଧାନ (ହାଲୁକା କେସ୍ ପାଇଁ):\n1. ସଂକ୍ରମଣ ବ୍ୟାପିବାରୁ ରୋକିବା ପାଇଁ ନିଜକୁ ପୃଥକ କରନ୍ତୁ।\n2. ସମ୍ପୂର୍ଣ୍ଣ ବିଶ୍ରାମ କରନ୍ତୁ ଏବଂ ପ୍ରୟାସରୁ ଦୂରେଇ ରୁହନ୍ତୁ।\n3. ପ୍ରଚୁର ପାଣୀୟ ପିଅନ୍ତୁ (ପାଣି, ORS, ଗରମ ସୁପ୍)।\n4. ହାଲୁକା, ପୌଷ୍ଟିକ ଖାଦ୍ୟ ଖାନ୍ତୁ।\n5. ମାସ୍କ ପିନ୍ଧନ୍ତୁ ଏବଂ ସ୍ୱଚ୍ଛତା ବଜାୟ ରଖନ୍ତୁ।\n\n⚠️ ତୁରନ୍ତ ଡାକ୍ତରୀ ସହାୟତା ନିଅନ୍ତୁ ଯଦି:\n- ଶ୍ୱାସ ନେବାରେ କଷ୍ଟ ବା ଛାତି ବେଦନା ହୁଏ\n- ଅକ୍ସିଜେନ୍ ସ୍ତର ନିମ୍ନ ଅନୁଭବ ହୁଏ (ଗୁରୁତର ଶ୍ୱାସକଷ୍ଟ)\n- ଜ୍ୱର ଅତ୍ୟଧିକ ଉଚ୍ଚ ବା 3 ଦିନରୁ ଅଧିକ ରହିଥାଏ\n- ରୋଗୀ ବୃଦ୍ଧ, ଗର୍ଭବତୀ, ବା ଡାଇବେଟିସ୍, BP, ଫେଫଡ଼ା ବା ହୃଦୟ ରୋଗ ଥିବା ବ୍ୟକ୍ତି\n- ବ୍ୟକ୍ତି ଅତ୍ୟନ୍ତ ଦୁର୍ବଳ, ଅସ୍ପଷ୍ଟ, ବା ଅସୁଚେତନା ହୁଏ\n\n➡️ ଗୁରୁତର କେସ୍ରେ, COVID-19 ଜୀବନ-ବିନାଶକାରୀ ହୋଇପାରେ ଏବଂ ହସ୍ପିଟାଲ୍ ଯତ୍ନ ଆବଶ୍ୟକ।"
+    },
+    {
+      "condition": "Muscle Pain",
+      "priority": "medium",
+      "keywords": [
+        "muscle pain",
+        "muscle ache",
+        "muscle soreness",
+        "muscle strain",
+        "pulled muscle",
+        "mussel pain",
+        "mussel ache",
+        "musclepain",
+        "muscel pain",
+        "mussle pain",
+        "body muscle pain",
+        "leg muscle pain",
+        "arm muscle pain",
+        "shoulder muscle pain",
+        "neck muscle pain",
+        "back muscle pain",
+        "manspeshiyon mein dard",
+        "muspeshiyon ka dard",
+        "muscle dard",
+        "pain after exercise",
+        "workout muscle pain",
+        "overwork muscle pain"
+      ],
+      "response": "Muscle pain can occur due to overuse, exercise, strain, dehydration, or minor injury.\n\nCare Steps:\n1. Take adequate rest and avoid heavy activity.\n2. Drink plenty of fluids.\n3. Apply warm compress to relax muscles.\n4. Do gentle stretching if comfortable.\n\n⚠️ Consult a doctor if:\n- Pain is severe or worsening\n- Pain lasts more than 3 days\n- Swelling, redness, or weakness occurs\n- Pain follows an injury or accident\n- Child or elderly person has severe muscle pain"
+    },
+    {
+      "condition": "Vitamin A Deficiency",
+      "priority": "low",
+      "keywords": [
+        "vitamin a deficiency",
+        "vitamin a kam",
+        "low vitamin a",
+        "night blindness",
+        "night vision problem",
+        "difficulty seeing at night",
+        "cannot see at night",
+        "poor night vision",
+        "can't see in dark",
+        "dry eyes",
+        "dry eye",
+        "eye dryness",
+        "dry eye problem",
+        "itchy eyes",
+        "burning eyes",
+        "eye infection frequently",
+        "frequent eye infection",
+        "red eyes",
+        "vision problem",
+        "blurred vision",
+        "dim vision",
+        "xerophthalmia",
+        "ratandha",
+        "raat mein na dikhe",
+        "andhere mein na dikhe",
+        "vitamin a deficency",
+        "vitamin a defiency",
+        "vitamin a defficiency"
+      ],
+      "response": "Vitamin A deficiency can cause night blindness, dry eyes, frequent eye infections, and vision problems.\n\nCare Steps:\n1. Eat vitamin A rich foods such as carrots, spinach, pumpkin, sweet potato, mango, papaya, milk, eggs, and fish.\n2. Maintain a balanced diet.\n\n⚠️ Consult a doctor if night vision problems, eye dryness, or infections persist."
+    },
+    {
+      "condition": "Vitamin B1 (Thiamine) Deficiency",
+      "priority": "medium",
+      "keywords": [
+        "vitamin b1 deficiency",
+        "b1 deficiency",
+        "thiamine deficiency",
+        "low vitamin b1",
+        "beri beri",
+        "beriberi",
+        "weakness",
+        "body weakness",
+        "tiredness",
+        "fatigue",
+        "nerve pain",
+        "nerve weakness",
+        "nerve problem",
+        "tingling in hands",
+        "tingling in feet",
+        "pins and needles",
+        "burning sensation in feet",
+        "muscle weakness",
+        "muscle cramps",
+        "loss of appetite",
+        "poor appetite",
+        "weight loss",
+        "difficulty walking",
+        "balance problem",
+        "unsteady walking",
+        "heart problem due to deficiency",
+        "fast heartbeat",
+        "shortness of breath",
+        "thiamin deficiency",
+        "thiamine deficency",
+        "vitamin b1 deficency"
+      ],
+      "response": "Vitamin B1 (thiamine) deficiency may cause weakness, nerve pain, tingling in hands or feet, fatigue, and difficulty walking.\n\nCare Steps:\n1. Eat whole grains, pulses, legumes, nuts, seeds, eggs, and meat.\n2. Avoid excessive alcohol consumption.\n\n⚠️ Consult a doctor if weakness, nerve symptoms, or walking difficulty persists. Blood tests and supplementation may be required."
+    },
+    {
+      "condition": "Vitamin B12 Deficiency",
+      "priority": "medium",
+      "keywords": [
+        "vitamin b12 deficiency",
+        "b12 deficiency",
+        "low b12",
+        "anemia",
+        "tingling sensation",
+        "numbness",
+        "memory problem",
+        "weakness"
+      ],
+      "response": "Vitamin B12 deficiency can cause weakness, anemia, numbness, and memory issues.\n\nCare Steps:\n1. Consume milk, eggs, meat, and fortified foods.\n2. Vegetarians may need supplements (doctor advised).\n\n⚠️ Consult a doctor for blood testing and treatment."
+    },
+    {
+      "condition": "Vitamin C Deficiency",
+      "priority": "low",
+      "keywords": [
+        "vitamin c deficiency",
+        "scurvy",
+        "bleeding gums",
+        "gum bleeding",
+        "slow wound healing",
+        "frequent infection",
+        "weakness"
+      ],
+      "response": "Vitamin C deficiency can cause bleeding gums, weakness, and delayed wound healing.\n\nCare Steps:\n1. Eat citrus fruits, amla, guava, tomato, and green vegetables.\n\n⚠️ See a doctor if bleeding or weakness continues."
+    },
+    {
+      "condition": "Vitamin D Deficiency",
+      "priority": "medium",
+      "keywords": [
+        "vitamin d deficiency",
+        "low vitamin d",
+        "bone pain",
+        "back pain",
+        "joint pain",
+        "muscle weakness",
+        "calcium deficiency",
+        "osteomalacia",
+        "rickets"
+      ],
+      "response": "Vitamin D deficiency may cause bone pain, muscle weakness, and joint pain.\n\nCare Steps:\n1. Get regular sunlight exposure.\n2. Eat eggs, milk, fish, and fortified foods.\n\n⚠️ Consult a doctor for blood test and supplements."
+    },
+    {
+      "condition": "Vitamin E Deficiency",
+      "priority": "low",
+      "keywords": [
+        "vitamin e deficiency",
+        "muscle weakness",
+        "nerve problem",
+        "balance problem",
+        "vision issues"
+      ],
+      "response": "Vitamin E deficiency can cause muscle weakness, nerve issues, and balance problems.\n\nCare Steps:\n1. Eat nuts, seeds, vegetable oils, and green vegetables.\n\n⚠️ Consult a doctor if symptoms persist."
+    },
+    {
+      "condition": "Vitamin K Deficiency",
+      "priority": "medium",
+      "keywords": [
+        "vitamin k deficiency",
+        "excessive bleeding",
+        "easy bruising",
+        "blood clotting problem",
+        "bleeding disorder"
+      ],
+      "response": "Vitamin K deficiency can cause easy bleeding and bruising.\n\nCare Steps:\n1. Eat green leafy vegetables like spinach and broccoli.\n\n⚠️ Seek medical advice if bleeding occurs frequently."
+    },
+    {
+      "keywords": [
+        "owner",
+        "who made you",
+        "who created you",
+        "who create you",
+        "who is your owner",
+        "who is your creator",
+        "who is your developer",
+        "who is your maker",
+        "who is your owner",
+        "who is your creator",
+        "who is your developer",
+        "who is your maker"
+      ],
+      "response": "This chatbot is jointly developed by Debasish Swain and Dibyaranjan Sahoo"
+    },
+    {
+      "keywords": [
+        "cancer",
+        "lump",
+        "cancer symptoms",
+        "cancer signs",
+        "cancer problem",
+        "cancer ki lakshan",
+        "cancer ki samasya",
+        "cancer ka ilaj",
+        "cancer treatment",
+        "cancer home care",
+        "cancer solution",
+        "cancer home remedy",
+        "cancer home solution",
+        "cancer home treatment",
+        "cancer care",
+        "cancer home care steps",
+        "cancer home care solution",
+        "cancer home care treatment",
+        "cancer home remedy steps",
+        "cancer home solution steps",
+        "cancer home treatment steps",
+        "cancer home care for symptoms",
+        "cancer home care for signs",
+        "cancer home care for problem",
+        "cancer home care for lakshan",
+        "cancer home care for samasya",
+        "cancer home care for ilaj",
+        "cancer home care for treatment",
+        "cancer home care for solution",
+        "cancer home care for remedy",
+        "cancer home care for care"
+      ],
+      "response": "Cancer is a complex disease that requires professional medical diagnosis and treatment. Home care can help manage symptoms and improve quality of life, but it cannot cure cancer.\n\nHome Care Tips:\n1. Maintain a healthy diet rich in fruits, vegetables, and whole grains.\n2. Stay hydrated and get regular exercise as tolerated.\n3. Manage stress through relaxation techniques or counseling.\n4. Follow your doctor's advice on medications and treatments.\n5. Seek support from family, friends, or support groups.\n\n⚠️ Always consult with your oncologist or healthcare provider for personalized care and treatment options."
+    },
+    {
+      "condition": "(Vertigo) Paroxysmal Positional Vertigo",
+      "priority": "low",
+      "keywords": [
+        "vertigo",
+        "paroxysmal positional vertigo",
+        "bppv",
+        "dizziness when moving head",
+        "room spinning sensation"
+      ],
+      "response": "Your symptoms may indicate Benign Paroxysmal Positional Vertigo (BPPV), which causes dizziness or a spinning sensation when moving your head.\n\nImmediate actions:\n1. Sit or lie down immediately when dizziness occurs to avoid falling.\n2. Move your head slowly and avoid sudden position changes.\n3. Stay hydrated and rest until the dizziness settles.\n4. Avoid driving or operating machinery while feeling dizzy.\n\nMedical advice:\nIf dizziness happens frequently, consult a doctor or ENT specialist. They may perform repositioning maneuvers (like the Epley maneuver) to treat the condition.\n\n⚠️ Seek urgent medical care if dizziness occurs with severe headache, vision problems, weakness, or difficulty speaking."
+    },
+    {
+      "condition": "AIDS",
+      "priority": "high",
+      "keywords": [
+        "aids",
+        "hiv aids",
+        "hiv infection",
+        "immune deficiency",
+        "hiv positive",
+        "hiv positive symptoms",
+        "hiv symptoms",
+        "hiv signs",
+        "hiv lakshan",
+        "hiv samasya",
+        "hiv ilaj",
+        "hiv treatment",
+        "hiv home care",
+        "hiv solution",
+        "hiv home remedy",
+        "hiv home solution",
+        "hiv home treatment",
+        "hiv care",
+        "hiv home care steps",
+        "hiv home care solution",
+        "hiv home care treatment"
+      ],
+      "response": "AIDS is a serious condition caused by HIV that weakens the immune system.\n\nImmediate actions:\n1. If you suspect HIV exposure, get an HIV test as soon as possible.\n2. Avoid sharing needles, razors, or personal items.\n3. Practice safe sex using protection.\n4. Maintain good nutrition and hygiene to support your immune system.\n\nMedical advice:\nVisit a doctor or HIV clinic for proper testing and treatment. Early treatment with antiretroviral therapy (ART) can help people live long and healthy lives.\n\n⚠️ Seek medical care immediately if you experience persistent fever, severe weight loss, chronic diarrhea, or unusual infections."
+    },
+    {
+      "condition": "Acne",
+      "priority": "low",
+      "keywords": [
+        "acne",
+        "pimples",
+        "skin pimples",
+        "face pimples",
+        "blackheads",
+        "oily skin",
+        "acne problem",
+        "acne lakshan",
+        "acne samasya",
+        "acne ilaj",
+        "acne treatment",
+        "acne home care",
+        "acne home remedy",
+        "acne home solution"
+      ],
+      "response": "Acne is a common skin condition that causes pimples, blackheads, or oily skin.\n\nImmediate actions:\n1. Wash your face gently twice a day with mild soap or cleanser.\n2. Avoid touching or squeezing pimples to prevent infection and scars.\n3. Keep skin clean and avoid oily cosmetics.\n4. Maintain a balanced diet and drink enough water.\n\nMedical advice:\nIf acne is severe, painful, or leaving scars, consult a dermatologist. They may prescribe medicated creams or treatments.\n\n⚠️ Seek medical advice if acne spreads rapidly, causes severe pain, or shows signs of infection."
+    },
+    {
+      "condition": "Alcoholic Hepatitis",
+      "priority": "high",
+      "keywords": [
+        "alcoholic hepatitis",
+        "liver inflammation alcohol",
+        "alcohol liver disease",
+        "alcoholic liver problem",
+        "alcoholic liver inflammation",
+        "alcoholic liver damage",
+        "alcoholic liver symptoms"
+      ],
+      "response": "Alcoholic hepatitis is inflammation of the liver caused by excessive alcohol consumption.\n\nImmediate actions:\n1. Stop drinking alcohol immediately.\n2. Drink plenty of water and eat nutritious food.\n3. Get adequate rest and avoid fatty or processed foods.\n4. Monitor symptoms like abdominal pain, yellowing of skin, or fatigue.\n\nMedical advice:\nConsult a doctor as soon as possible. Blood tests and liver tests may be required to check liver damage.\n\n⚠️ Seek urgent medical care if you develop severe abdominal pain, vomiting blood, confusion, or yellowing of the skin and eyes."
+    },
+    {
+      "condition": "Allergy",
+      "priority": "low",
+      "keywords": [
+        "allergy",
+        "allergic reaction",
+        "skin allergy",
+        "dust allergy",
+        "pollen allergy",
+        "food allergy"
+      ],
+      "response": "Your symptoms may indicate an allergy.\n\nImmediate actions:\n1. Avoid the suspected allergen (dust, pollen, food, etc.).\n2. Wash affected skin with clean water if irritation occurs.\n3. Keep the environment clean and well ventilated.\n4. Drink plenty of water and rest.\n\nMedical advice:\nIf symptoms such as itching, sneezing, or rash continue, consult a doctor for antihistamine medication.\n\n⚠️ Seek urgent medical care if you experience severe swelling, breathing difficulty, or dizziness."
+    },
+    {
+      "condition": "Arthritis",
+      "priority": "low",
+      "keywords": [
+        "arthritis",
+        "joint pain arthritis",
+        "joint swelling"
+      ],
+      "response": "Arthritis causes pain and stiffness in the joints.\n\nImmediate actions:\n1. Rest the affected joints and avoid heavy activity.\n2. Apply a warm compress to reduce stiffness.\n3. Do gentle stretching or light exercise to keep joints flexible.\n4. Maintain a healthy weight to reduce joint stress.\n\nMedical advice:\nConsult a doctor if joint pain persists or swelling increases. Treatment may include physiotherapy or medication.\n\n⚠️ Seek medical help if joint pain becomes severe or limits movement."
+    },
+    {
+      "condition": "Bronchial Asthma",
+      "priority": "high",
+      "keywords": [
+        "bronchial asthma",
+        "asthma attack",
+        "asthma breathing problem"
+      ],
+      "response": "Bronchial asthma affects breathing and may cause wheezing or shortness of breath.\n\nImmediate actions:\n1. Sit upright and try to stay calm.\n2. Use your prescribed inhaler if available.\n3. Move to fresh air and avoid dust or smoke.\n4. Take slow, deep breaths.\n\nMedical advice:\nConsult a doctor for proper asthma management and medication.\n\n⚠️ Seek emergency medical help immediately if breathing becomes very difficult, lips turn blue, or inhaler does not relieve symptoms."
+    },
+    {
+      "condition": "Cervical spondylosis",
+      "priority": "low",
+      "keywords": [
+        "cervical spondylosis",
+        "neck pain",
+        "neck stiffness"
+      ],
+      "response": "Cervical spondylosis is a condition affecting the neck bones and discs.\n\nImmediate actions:\n1. Rest your neck and avoid prolonged phone or computer use.\n2. Maintain correct posture while sitting or working.\n3. Apply a warm compress to reduce stiffness.\n4. Perform gentle neck stretching exercises.\n\nMedical advice:\nConsult a doctor or physiotherapist if neck pain persists or causes numbness in arms.\n\n⚠️ Seek medical attention if severe pain, weakness, or loss of sensation occurs."
+    },
+    {
+      "condition": "Chicken pox",
+      "priority": "medium",
+      "keywords": [
+        "chicken pox",
+        "chickenpox",
+        "varicella"
+      ],
+      "response": "Chickenpox is a contagious viral infection that causes itchy skin rashes and fever.\n\nImmediate actions:\n1. Get plenty of rest and drink fluids.\n2. Avoid scratching the rash to prevent infection.\n3. Keep the skin clean and wear loose clothing.\n4. Stay isolated to prevent spreading the infection.\n\nMedical advice:\nConsult a doctor for proper treatment and fever management.\n\n⚠️ Seek medical care if fever becomes very high, rash spreads rapidly, or breathing difficulty occurs."
+    },
+    {
+      "condition": "Chronic cholestasis",
+      "priority": "medium",
+      "keywords": [
+        "chronic cholestasis",
+        "cholestasis liver",
+        "bile flow problem"
+      ],
+      "response": "Chronic cholestasis is a condition where bile flow from the liver is reduced.\n\nImmediate actions:\n1. Avoid alcohol and fatty foods.\n2. Maintain a balanced diet with fruits and vegetables.\n3. Drink enough water and rest.\n4. Monitor symptoms such as itching or yellowing of skin.\n\nMedical advice:\nConsult a doctor for liver tests and proper treatment.\n\n⚠️ Seek medical help if jaundice (yellow skin or eyes) worsens or abdominal pain becomes severe."
+    },
+    {
+      "condition": "Dengue",
+      "priority": "high",
+      "keywords": [
+        "dengue",
+        "dengue fever",
+        "mosquito dengue"
+      ],
+      "response": "Dengue is a mosquito-borne viral infection that causes high fever and body pain.\n\nImmediate actions:\n1. Drink plenty of fluids (water, ORS, coconut water).\n2. Take adequate rest.\n3. Use paracetamol for fever if recommended by a doctor.\n4. Avoid aspirin or ibuprofen as they may increase bleeding risk.\n\nMedical advice:\nVisit a doctor for blood tests and monitoring of platelet levels.\n\n⚠️ Seek urgent medical help if severe abdominal pain, vomiting, bleeding, or extreme weakness occurs."
+    },
+    {
+      "condition": "Diabetes",
+      "priority": "medium",
+      "keywords": [
+        "diabetes",
+        "high blood sugar",
+        "sugar disease"
+      ],
+      "response": "Diabetes occurs when blood sugar levels become too high.\n\nImmediate actions:\n1. Monitor your blood sugar regularly if possible.\n2. Avoid sugary foods and drinks.\n3. Maintain a balanced diet with vegetables and whole grains.\n4. Engage in regular physical activity such as walking.\n\nMedical advice:\nConsult a doctor for blood sugar testing and proper treatment.\n\n⚠️ Seek medical help if you experience extreme thirst, frequent urination, blurred vision, or unexplained weight loss."
+    },
+    {
+      "condition": "Dimorphic hemmorhoids(piles)",
+      "priority": "low",
+      "keywords": [
+        "piles",
+        "hemorrhoids",
+        "rectal swelling"
+      ],
+      "response": "Piles (hemorrhoids) are swollen veins in the rectal area.\n\nImmediate actions:\n1. Increase fiber intake through fruits and vegetables.\n2. Drink plenty of water.\n3. Avoid prolonged sitting or straining during bowel movements.\n4. Maintain good hygiene in the affected area.\n\nMedical advice:\nConsult a doctor if bleeding or pain continues.\n\n⚠️ Seek medical care if there is heavy bleeding or severe pain."
+    },
+    {
+      "condition": "Drug Reaction",
+      "priority": "medium",
+      "keywords": [
+        "drug reaction",
+        "medicine allergy",
+        "drug side effect"
+      ],
+      "response": "A drug reaction occurs when the body reacts negatively to a medication.\n\nImmediate actions:\n1. Stop the suspected medication if advised.\n2. Monitor symptoms such as rash, itching, or swelling.\n3. Drink fluids and rest.\n4. Avoid taking new medicines without medical advice.\n\nMedical advice:\nConsult a doctor to identify the responsible medication.\n\n⚠️ Seek emergency help if severe swelling, breathing difficulty, or dizziness occurs."
+    },
+    {
+      "condition": "Hypertension",
+      "priority": "medium",
+      "keywords": [
+        "hypertension",
+        "high blood pressure",
+        "bp high",
+        "high bp"
+      ],
+      "response": "Your symptoms may indicate high blood pressure (Hypertension).\n\nImmediate actions:\n1. Sit calmly and avoid stress or physical exertion.\n2. Check your blood pressure if a monitor is available.\n3. Reduce salt intake and drink water normally.\n4. Avoid smoking, alcohol, and excessive caffeine.\n\nMedical advice:\nConsult a doctor for proper blood pressure evaluation and medication if needed.\n\n⚠️ Seek urgent medical help if you experience severe chest pain, severe headache, vision problems, or difficulty breathing."
+    },
+    {
+      "condition": "Hyperthyroidism",
+      "priority": "medium",
+      "keywords": [
+        "hyperthyroidism",
+        "overactive thyroid",
+        "high thyroid hormone"
+      ],
+      "response": "Hyperthyroidism occurs when the thyroid gland produces too much hormone.\n\nImmediate actions:\n1. Rest and avoid excessive physical stress.\n2. Maintain a balanced diet and stay hydrated.\n3. Avoid excess caffeine as it may worsen symptoms like rapid heartbeat.\n4. Monitor symptoms such as weight loss, nervousness, or rapid heartbeat.\n\nMedical advice:\nConsult a doctor for thyroid function tests and appropriate treatment.\n\n⚠️ Seek medical attention if you experience severe palpitations, chest pain, or extreme weakness."
+    },
+    {
+      "condition": "Hypoglycemia",
+      "priority": "high",
+      "keywords": [
+        "hypoglycemia",
+        "low blood sugar",
+        "sugar low"
+      ],
+      "response": "Hypoglycemia means your blood sugar level is too low.\n\nImmediate actions:\n1. Consume a quick source of sugar immediately (glucose tablets, fruit juice, candy, or sugar water).\n2. Rest and avoid physical activity until you feel better.\n3. Check blood sugar if a glucometer is available.\n4. Eat a small meal or snack after symptoms improve.\n\nMedical advice:\nConsult a doctor if low blood sugar episodes occur frequently.\n\n⚠️ Seek emergency help if confusion, seizures, or loss of consciousness occurs."
+    },
+    {
+      "condition": "Hypothyroidism",
+      "priority": "low",
+      "keywords": [
+        "hypothyroidism",
+        "underactive thyroid",
+        "low thyroid hormone"
+      ],
+      "response": "Hypothyroidism occurs when the thyroid gland produces too little hormone.\n\nImmediate actions:\n1. Maintain a healthy balanced diet.\n2. Ensure adequate rest and regular physical activity.\n3. Monitor symptoms such as fatigue, weight gain, or cold sensitivity.\n4. Avoid excessive processed foods.\n\nMedical advice:\nConsult a doctor for thyroid hormone tests and proper medication if needed.\n\n⚠️ Seek medical advice if symptoms worsen or interfere with daily activities."
+    },
+    {
+      "condition": "Impetigo",
+      "priority": "low",
+      "keywords": [
+        "impetigo",
+        "impetigo",
+        "impetigo"
+      ],
+      "response": "If you think you may have Impetigo, please start by:\n1. Rest and drink plenty of fluids.\n2. Avoid self-medicating with unprescribed medicines.\n3. Monitor your symptoms carefully (temperature, pain, breathing).\n4. Seek medical advice as soon as possible to confirm the diagnosis.\n\n⚠️ If symptoms worsen (high fever, severe pain, difficulty breathing, bleeding, or loss of consciousness), seek immediate medical attention."
+    },
+    {
+      "condition": "Jaundice",
+      "priority": "medium",
+      "keywords": [
+        "jaundice",
+        "yellow skin",
+        "yellow eyes",
+        "liver jaundice"
+      ],
+      "response": "Jaundice causes yellowing of the skin and eyes due to liver problems.\n\nImmediate actions:\n1. Get adequate rest and avoid heavy physical work.\n2. Drink plenty of clean water and maintain a light diet.\n3. Avoid alcohol, oily foods, and unnecessary medications.\n4. Maintain proper hygiene and eat fresh home-cooked food.\n\nMedical advice:\nConsult a doctor for liver function tests and proper diagnosis.\n\n⚠️ Seek medical help immediately if severe abdominal pain, vomiting, confusion, or extreme weakness occurs."
+    },
+    {
+      "condition": "Malaria",
+      "priority": "high",
+      "keywords": [
+        "malaria",
+        "malaria fever",
+        "mosquito malaria",
+        "high fever chills"
+      ],
+      "response": "Malaria is a mosquito-borne infection that causes high fever and chills.\n\nImmediate actions:\n1. Rest and drink plenty of fluids or ORS.\n2. Keep monitoring body temperature.\n3. Use mosquito nets or repellents to prevent further bites.\n4. Take paracetamol for fever if advised by a doctor.\n\nMedical advice:\nVisit a healthcare facility for a blood test and proper antimalarial treatment.\n\n⚠️ Seek urgent medical care if fever becomes very high, severe vomiting, confusion, or weakness occurs."
+    },
+    {
+      "condition": "Migraine",
+      "priority": "low",
+      "keywords": [
+        "migraine",
+        "severe headache",
+        "migraine headache"
+      ],
+      "response": "Migraine is a severe recurring headache often accompanied by nausea or sensitivity to light.\n\nImmediate actions:\n1. Rest in a quiet, dark room.\n2. Avoid bright lights and loud noise.\n3. Drink water and try relaxation techniques.\n4. Apply a cold or warm compress to the forehead or neck.\n\nMedical advice:\nConsult a doctor if migraines occur frequently or become severe.\n\n⚠️ Seek medical help if headache is sudden, extremely severe, or accompanied by vision problems or confusion."
+    },
+    {
+      "condition": "Osteoarthritis",
+      "priority": "low",
+      "keywords": [
+        "osteoarthritis",
+        "joint pain",
+        "knee arthritis"
+      ],
+      "response": "Osteoarthritis is a joint condition that causes pain, stiffness, and reduced movement.\n\nImmediate actions:\n1. Rest the affected joint and avoid heavy activities.\n2. Apply warm compresses to reduce stiffness.\n3. Perform light stretching or physiotherapy exercises.\n4. Maintain a healthy body weight.\n\nMedical advice:\nConsult a doctor if joint pain or swelling persists.\n\n⚠️ Seek medical help if joints become severely swollen, very painful, or movement becomes difficult."
+    },
+    {
+      "condition": "Paralysis (Brain Hemorrhage)",
+      "priority": "high",
+      "keywords": [
+        "paralysis",
+        "brain hemorrhage",
+        "stroke paralysis"
+      ],
+      "response": "Paralysis due to brain hemorrhage is a serious medical emergency.\n\nImmediate actions:\n1. Call emergency medical services immediately.\n2. Keep the person lying down with the head slightly elevated.\n3. Do not give food, drink, or medication unless advised by a doctor.\n4. Monitor breathing and consciousness until medical help arrives.\n\n⚠️ Emergency signs include sudden weakness on one side of the body, difficulty speaking, severe headache, or loss of consciousness."
+    },
+    {
+      "condition": "Peptic Ulcer Disease",
+      "priority": "medium",
+      "keywords": [
+        "peptic ulcer",
+        "stomach ulcer",
+        "ulcer stomach pain"
+      ],
+      "response": "Peptic ulcer disease causes sores in the stomach lining and may lead to abdominal pain.\n\nImmediate actions:\n1. Avoid spicy, acidic, or fried foods.\n2. Eat small and regular meals.\n3. Avoid alcohol, smoking, and excessive caffeine.\n4. Reduce stress and get enough rest.\n\nMedical advice:\nConsult a doctor for proper diagnosis and medication to reduce stomach acid.\n\n⚠️ Seek urgent medical help if you experience vomiting blood, black stools, or severe stomach pain."
+    },
+    {
+      "condition": "Pneumonia",
+      "priority": "high",
+      "keywords": [
+        "pneumonia",
+        "lung infection",
+        "chest infection"
+      ],
+      "response": "Pneumonia is an infection that inflames the air sacs in the lungs.\n\nImmediate actions:\n1. Rest and drink plenty of fluids.\n2. Take fever-reducing medicine if prescribed.\n3. Avoid smoking or exposure to cold air.\n4. Monitor breathing and temperature.\n\nMedical advice:\nConsult a doctor promptly for diagnosis and antibiotics if needed.\n\n⚠️ Seek emergency care if breathing becomes difficult, chest pain increases, or lips turn bluish."
+    },
+    {
+      "condition": "Psoriasis",
+      "priority": "low",
+      "keywords": [
+        "psoriasis",
+        "skin psoriasis",
+        "red scaly skin"
+      ],
+      "response": "Psoriasis is a chronic skin condition that causes red, scaly patches.\n\nImmediate actions:\n1. Keep skin moisturized regularly.\n2. Avoid scratching or irritating the affected areas.\n3. Manage stress and maintain a healthy lifestyle.\n4. Use mild soaps and skin-friendly products.\n\nMedical advice:\nConsult a dermatologist for proper treatment such as medicated creams or therapy.\n\n⚠️ Seek medical advice if the rash spreads rapidly or becomes painful."
+    },
+    {
+      "condition": "Tuberculosis",
+      "priority": "high",
+      "keywords": [
+        "tuberculosis",
+        "tb",
+        "persistent cough"
+      ],
+      "response": "Tuberculosis is a bacterial infection that mainly affects the lungs.\n\nImmediate actions:\n1. Cover mouth while coughing to prevent spreading infection.\n2. Rest and maintain good nutrition.\n3. Avoid close contact with others until diagnosis.\n4. Drink plenty of fluids.\n\nMedical advice:\nVisit a healthcare center for TB testing and start the full course of prescribed treatment if confirmed.\n\n⚠️ Seek medical help if cough lasts more than two weeks, coughing blood, or severe weakness occurs."
+    },
+    {
+      "condition": "Typhoid",
+      "priority": "high",
+      "keywords": [
+        "typhoid",
+        "typhoid fever",
+        "salmonella infection"
+      ],
+      "response": "Typhoid is a bacterial infection usually spread through contaminated food or water.\n\nImmediate actions:\n1. Rest and drink plenty of clean fluids or ORS.\n2. Eat soft, easily digestible foods.\n3. Maintain strict hygiene and handwashing.\n4. Avoid outside or contaminated food.\n\nMedical advice:\nConsult a doctor for blood tests and antibiotics if necessary.\n\n⚠️ Seek urgent care if persistent high fever, severe weakness, abdominal pain, or confusion occurs."
+    },
+    {
+      "condition": "Urinary Tract Infection",
+      "priority": "medium",
+      "keywords": [
+        "urinary tract infection",
+        "uti",
+        "painful urination"
+      ],
+      "response": "A urinary tract infection (UTI) affects the urinary system and may cause pain during urination.\n\nImmediate actions:\n1. Drink plenty of water to flush bacteria.\n2. Maintain proper hygiene.\n3. Avoid holding urine for long periods.\n4. Wear clean and breathable clothing.\n\nMedical advice:\nConsult a doctor for urine tests and antibiotics if needed.\n\n⚠️ Seek medical care if fever, back pain, or blood in urine occurs."
+    },
+    {
+      "condition": "Varicose Veins",
+      "priority": "low",
+      "keywords": [
+        "varicose veins",
+        "swollen veins",
+        "leg vein swelling"
+      ],
+      "response": "Varicose veins are enlarged veins usually seen in the legs.\n\nImmediate actions:\n1. Avoid standing or sitting for long periods.\n2. Elevate legs while resting.\n3. Engage in light walking or exercise.\n4. Maintain a healthy body weight.\n\nMedical advice:\nConsult a doctor if pain, swelling, or skin changes occur.\n\n⚠️ Seek medical attention if severe swelling or skin ulcers develop."
+    },
+    {
+      "condition": "Hepatitis A",
+      "priority": "medium",
+      "keywords": [
+        "hepatitis a",
+        "hepatitis virus a",
+        "liver infection hepatitis a"
+      ],
+      "response": "Hepatitis A is a viral infection affecting the liver and often spreads through contaminated food or water.\n\nImmediate actions:\n1. Get plenty of rest and drink clean fluids.\n2. Eat light and nutritious food.\n3. Avoid alcohol and fatty foods.\n4. Maintain strict hygiene to prevent spreading infection.\n\nMedical advice:\nConsult a doctor for proper diagnosis and monitoring of liver function.\n\n⚠️ Seek medical help if severe vomiting, confusion, or worsening jaundice occurs."
+    }
+  ],
+  "fallback": "I'm sorry, I do not have enough information about that symptom. Please consult a qualified medical professional for proper diagnosis.",
+  "fallback_or": "ଦୁଃଖିତ, ମୁଁ ଏହି ଲକ୍ଷଣ ବିଷୟରେ ପର୍ଯ୍ୟାପ୍ତ ସୂଚନା ପାଇନି। ଠିକ୍ ନିଦାନ ପାଇଁ ଦୟାକରି ଯୋଗ୍ୟ ଡାକ୍ତରଙ୍କ ସହ କଥା ହୁଅନ୍ତୁ।"
+}

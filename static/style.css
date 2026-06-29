@@ -1,0 +1,664 @@
+/* ===============================
+   GLOBAL MEDICAL THEME
+=================================*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 100px;
+    background: #e8f8f5; /* soft healing teal */
+    padding-bottom: 20px;
+}
+
+/* ===============================
+   CHAT CONTAINER
+=================================*/
+.chat-container {
+    width: 500px;
+    max-width: 94vw;
+    min-width: 320px;
+    height: 650px;
+    max-height: calc(100vh - 140px);
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 12px 30px rgba(26, 188, 156, 0.15);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border: 1px solid #d4f1ea;
+    margin: 20px auto;
+}
+
+/* ===============================
+   HEADER
+=================================*/
+.chat-header {
+    background: #1abc9c; /* modern teal */
+    color: white;
+    padding: 16px;
+    font-size: 17px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-header span {
+    font-size: 13px;
+    font-weight: normal;
+    opacity: 0.85;
+}
+
+/* ===============================
+   CHAT BOX
+=================================*/
+.chat-box {
+    flex: 1;
+    padding: 18px;
+    overflow-y: auto;
+    background: #f0fdf9;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Scrollbar */
+.chat-box::-webkit-scrollbar {
+    width: 6px;
+}
+.chat-box::-webkit-scrollbar-thumb {
+    background: #a8ddd4;
+    border-radius: 4px;
+}
+
+/* ===============================
+   MESSAGE BUBBLES
+=================================*/
+.bot-message,
+.user-message {
+    max-width: 75%;
+    padding: 12px 16px;
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* Bot message (Doctor side) */
+.bot-message {
+    background: #ffffff;
+    border-left: 4px solid #1abc9c;
+    align-self: flex-start;
+    color: #2a2a2a;
+}
+
+/* User message (Patient side) */
+.user-message {
+    background: #d4f1ea;
+    align-self: flex-end;
+    border-right: 4px solid #1abc9c;
+    color: #0a5a4d;
+}
+
+/* ===============================
+   TYPING INDICATOR
+=================================*/
+.typing {
+    align-self: flex-start;
+    display: flex;
+    gap: 5px;
+    padding: 10px 14px;
+    background: #ffffff;
+    border-left: 4px solid #1abc9c;
+    border-radius: 10px;
+}
+
+.typing span {
+    width: 6px;
+    height: 6px;
+    background: #1abc9c;
+    border-radius: 50%;
+    animation: blink 1.4s infinite both;
+}
+
+.typing span:nth-child(2) { animation-delay: 0.2s; }
+.typing span:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes blink {
+    0% { opacity: 0.2; }
+    20% { opacity: 1; }
+    100% { opacity: 0.2; }
+}
+
+/* ===============================
+   INPUT AREA
+=================================*/
+.chat-input {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 14px;
+    border-top: 1px solid #d4f1ea;
+    background: #ffffff;
+    gap: 10px;
+    align-items: center;
+}
+
+.chat-input .language-select {
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #c8e6e0;
+    background: #ffffff;
+    color: #1f2d2a;
+    font-size: 14px;
+    min-width: 115px;
+    order: 0;
+}
+
+.chat-input .language-select:focus {
+    border-color: #1abc9c;
+    box-shadow: 0 0 0 2px rgba(26, 188, 156, 0.15);
+    outline: none;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 11px 14px;
+    border-radius: 8px;
+    border: 1px solid #c8e6e0;
+    outline: none;
+    font-size: 14px;
+    transition: 0.3s ease;
+    min-width: 200px;
+    order: 1;
+}
+
+.chat-input input:focus {
+    border-color: #1abc9c;
+    box-shadow: 0 0 0 2px rgba(26,188,156,0.15);
+}
+
+/* Send Button & Diagnose Button */
+.chat-input button {
+    padding: 11px 18px;
+    border: none;
+    background: #1abc9c;
+    color: white;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+    white-space: nowrap;
+    order: 2;
+}
+
+.chat-input button:hover {
+    background: #095a87;
+}
+
+.chat-input .diagnose-btn {
+    background: #3498db;
+    order: 3;
+}
+
+.chat-input .diagnose-btn:hover {
+    background: #2980b9;
+}
+
+/* ===============================
+   DIAGNOSIS CARDS
+=================================*/
+.diagnoses-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 12px 0;
+}
+
+.diagnosis-card {
+    background: #f8f9fa;
+    border: 1px solid #d4f1ea;
+    border-radius: 8px;
+    padding: 12px;
+    box-shadow: 0 2px 4px rgba(26, 188, 156, 0.08);
+}
+
+.diagnosis-card h4 {
+    margin: 0 0 8px 0;
+    color: #1abc9c;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.match-info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.match-bar {
+    width: 100%;
+    height: 8px;
+    background: #dce8e4;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.match-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #1abc9c, #48dbcf);
+    border-radius: 4px;
+    transition: width 0.3s ease;
+}
+
+.match-text {
+    font-size: 12px;
+    color: #6c757d;
+    font-weight: 500;
+}
+
+.diagnosis-note {
+    font-size: 13px;
+    color: #dc3545;
+    font-weight: 500;
+    margin: 8px 0 0 0;
+    padding: 8px;
+    background: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 6px;
+}
+
+/* Dark mode for diagnoses */
+body.dark .diagnosis-card {
+    background: #1a342e;
+    border: 1px solid #1f4a42;
+    color: #e8f8f5;
+}
+
+body.dark .diagnosis-card h4 {
+    color: #48dbcf;
+}
+
+body.dark .match-bar {
+    background: #1f4a42;
+}
+
+body.dark .match-text {
+    color: #a8ddd4;
+}
+
+body.dark .diagnosis-note {
+    background: #2d1818;
+    border: 1px solid #5a2d2d;
+    color: #ea868f;
+}
+
+/* ===============================
+   HISTORY BUTTON
+=================================*/
+.history-btn {
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    padding: 10px 16px;
+    background-color: #1abc9c;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.history-btn:hover {
+    background-color: #16a085;
+}
+
+/* ===============================
+   DARK MODE - MEDICAL PROFESSIONAL
+=================================*/
+
+body.dark {
+    background: #0d1f1b;
+}
+
+body.dark .chat-container {
+    background: #132d28;
+    border: 1px solid #1f4a42;
+    box-shadow: 0 12px 30px rgba(26,188,156,0.1);
+}
+
+body.dark .chat-header {
+    background: #1abc9c;
+    color: white;
+}
+
+body.dark .chat-box {
+    background: #0f2620;
+}
+
+body.dark .bot-message {
+    background: #1a342e;
+    color: #e8f8f5;
+    border-left: 4px solid #48dbcf;
+}
+
+body.dark .user-message {
+    background: #1abc9c;
+    color: white;
+    border-right: 4px solid #48dbcf;
+}
+
+body.dark .typing {
+    background: #1a342e;
+    border-left: 4px solid #48dbcf;
+}
+
+body.dark .chat-input {
+    background: #132d28;
+    border-top: 1px solid #1f4a42;
+}
+
+body.dark .chat-input input {
+    background: #1a342e;
+    color: white;
+    border: 1px solid #1f4a42;
+}
+
+body.dark .chat-input input:focus {
+    border-color: #48dbcf;
+    box-shadow: 0 0 0 2px rgba(72,219,207,0.2);
+}
+
+body.dark .chat-input .language-select {
+    background: #1a342e;
+    color: #e8f8f5;
+    border: 1px solid #1f4a42;
+}
+
+body.dark .chat-input button {
+    background: #1abc9c;
+}
+
+body.dark .chat-input button:hover {
+    background: #16a085;
+}
+/* ===============================
+   PROFESSIONAL DARK MODE BUTTON
+=================================*/
+#dark-toggle {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 16px;
+    background: rgba(255,255,255,0.15);
+    color: white;
+
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+#dark-toggle:hover {
+    background: white;
+    color: #1abc9c;
+    transform: rotate(20deg) scale(1.1);
+}
+
+/* Dark mode active state */
+body.dark #dark-toggle {
+    background: rgba(255,255,255,0.2);
+    color: #ffd43b;
+}
+
+/* ===============================
+   MOBILE & TABLET RESPONSIVE
+=================================*/
+@media (max-width: 768px) {
+    body {
+        padding-top: 40px;
+        padding-bottom: 10px;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .chat-container {
+        width: min(95vw, 500px);
+        min-width: auto;
+        height: calc(100vh - 65px);
+        max-height: calc(100vh - 65px);
+        border-radius: 10px;
+        margin: 5px auto;
+        box-shadow: 0 8px 22px rgba(26, 188, 156, 0.12);
+    }
+
+    .chat-header {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    .chat-box {
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .bot-message,
+    .user-message {
+        max-width: 85%;
+        font-size: 14px;
+        padding: 10px 14px;
+    }
+
+    .chat-input {
+        padding: 8px;
+        gap: 6px;
+        flex-wrap: wrap;
+    }
+
+    .chat-input input {
+        font-size: 14px;
+        padding: 10px;
+        flex: 1 1 100%;
+        min-width: 100%;
+        order: 1;
+    }
+
+    .chat-input .language-select {
+        flex: 1 1 100%;
+        min-width: 100%;
+        order: 0;
+    }
+
+    .chat-input button {
+        padding: 10px 12px;
+        font-size: 13px;
+        flex: 1 1 calc(50% - 3px);
+        order: 2;
+    }
+
+    .header-top {
+        position: fixed;
+        left: 0;
+        right: 0;
+        transform: none;
+        border-radius: 0;
+        padding: 8px 12px;
+        height: auto;
+        min-height: 50px;
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+
+    .header-info {
+        width: 100%;
+        flex-wrap: wrap;
+        order: 1;
+    }
+
+    .user-info {
+        gap: 8px;
+    }
+
+    .user-avatar {
+        width: 36px;
+        height: 36px;
+        font-size: 14px;
+    }
+
+    .header-info h2 {
+        font-size: 16px;
+        margin: 0;
+        flex: 1 1 auto;
+    }
+
+    .user-info div:last-child {
+        font-size: 12px;
+    }
+
+    .header-buttons {
+        width: 100%;
+        order: 2;
+        gap: 4px;
+    }
+
+    .header-buttons a,
+    .header-buttons button {
+        flex: 1 1 auto;
+        padding: 8px 8px;
+        font-size: 12px;
+    }
+
+    .watermark {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding-top: 35px;
+    }
+
+    .chat-container {
+        width: 100vw;
+        min-width: unset;
+        max-width: 100vw;
+        height: calc(100vh - 60px);
+        max-height: calc(100vh - 60px);
+        border-radius: 0;
+        margin: 0;
+    }
+
+    .chat-header {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .chat-box {
+        padding: 8px;
+    }
+
+    .bot-message,
+    .user-message {
+        max-width: 90%;
+        font-size: 13px;
+        padding: 8px 12px;
+    }
+
+    .chat-input {
+        padding: 6px;
+        gap: 4px;
+    }
+
+    .chat-input input {
+        font-size: 13px;
+        padding: 8px;
+    }
+
+    .chat-input .language-select {
+        font-size: 13px;
+        padding: 8px;
+    }
+
+    .chat-input button {
+        padding: 8px 10px;
+        font-size: 12px;
+        flex: 1 1 calc(50% - 2px);
+    }
+
+    .header-top {
+        padding: 6px 8px;
+        height: auto;
+        min-height: 45px;
+        gap: 4px;
+    }
+
+    .header-info h2 {
+        font-size: 14px;
+    }
+
+    .user-info div {
+        font-size: 11px;
+    }
+
+    .user-avatar {
+        width: 32px;
+        height: 32px;
+        font-size: 12px;
+        border-width: 1px;
+    }
+
+    .header-buttons a,
+    .header-buttons button {
+        padding: 6px 6px;
+        font-size: 11px;
+    }
+
+    .watermark {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 360px) {
+    body {
+        padding-top: 35px;
+    }
+
+    .chat-container {
+        height: calc(100vh - 55px);
+    }
+
+    .header-info h2 {
+        font-size: 13px;
+    }
+
+    .user-info {
+        gap: 6px;
+    }
+
+    .user-avatar {
+        width: 30px;
+        height: 30px;
+    }
+
+    .chat-header {
+        font-size: 13px;
+        padding: 8px;
+    }
+
+    .header-buttons a,
+    .header-buttons button {
+        padding: 5px 5px;
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,326 @@
+/* -----------------------------
+   GLOBAL STYLES
+------------------------------*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(135deg, #e9f5f2, #c7ecee);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    transition: background 0.5s ease;
+}
+
+/* -----------------------------
+   CHAT CONTAINER
+------------------------------*/
+.chat-container {
+    width: 500px;
+    height: 680px;
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    animation: fadeIn 0.8s ease;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* -----------------------------
+   HEADER
+------------------------------*/
+.chat-header {
+    background: linear-gradient(135deg, #2b7a78, #3aafa9);
+    color: white;
+    padding: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Dark mode toggle hover */
+#dark-toggle {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#dark-toggle:hover {
+    transform: rotate(20deg) scale(1.1);
+}
+
+/* -----------------------------
+   CHAT BOX
+------------------------------*/
+.chat-box {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    background: #f8fafa;
+    scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+.chat-box::-webkit-scrollbar {
+    width: 6px;
+}
+.chat-box::-webkit-scrollbar-thumb {
+    background: #bbb;
+    border-radius: 5px;
+}
+
+/* -----------------------------
+   MESSAGES
+------------------------------*/
+.bot-message,
+.user-message,
+.typing {
+    max-width: 75%;
+    padding: 10px 14px;
+    margin-bottom: 12px;
+    border-radius: 12px;
+    font-size: 14px;
+    line-height: 1.4;
+    animation: popIn 0.3s ease;
+}
+
+/* Message pop animation */
+@keyframes popIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to   { opacity: 1; transform: scale(1); }
+}
+
+.bot-message {
+    background: #def2f1;
+    align-self: flex-start;
+}
+
+.user-message {
+    background: linear-gradient(135deg, #3aafa9, #2b7a78);
+    color: white;
+    align-self: flex-end;
+    margin-left: auto;
+}
+
+.typing {
+    font-style: italic;
+    color: gray;
+}
+
+/* Hover effect on messages */
+.bot-message:hover,
+.user-message:hover {
+    transform: translateY(-2px);
+    transition: transform 0.2s ease;
+}
+
+
+/* -----------------------------
+   INPUT AREA
+------------------------------*/
+.chat-input {
+    display: flex;
+    padding: 12px;
+    border-top: 1px solid #ddd;
+    background: #ffffff;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.chat-input input:focus {
+    border-color: #3aafa9;
+    box-shadow: 0 0 0 2px rgba(58,175,169,0.2);
+}
+
+/* Send button */
+.chat-input button {
+    margin-left: 10px;
+    padding: 10px 16px;
+    border: none;
+    background: linear-gradient(135deg, #2b7a78, #3aafa9);
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.chat-input button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.chat-input button:active {
+    transform: scale(0.95);
+}
+
+/* -----------------------------
+   DARK MODE
+------------------------------*/
+body.dark {
+    background: linear-gradient(135deg, #121212, #1e1e1e);
+}
+
+body.dark .chat-container {
+    background: #1e1e1e;
+}
+
+body.dark .chat-box {
+    background: #2b2b2b;
+}
+
+body.dark .bot-message {
+    background: #3a3a3a;
+    color: white;
+}
+
+body.dark .user-message {
+    background: linear-gradient(135deg, #00796b, #004d40);
+}
+
+body.dark .chat-input {
+    background: #1e1e1e;
+    border-top: 1px solid #444;
+}
+
+body.dark .chat-input input {
+    background: #333;
+    color: white;
+    border: 1px solid #555;
+}
+
+body.dark .chat-box::-webkit-scrollbar-thumb {
+    background: #555;
+}
+/* -----------------------------
+   WELCOME ANIMATION
+------------------------------*/
+
+/* Container entrance animation */
+.chat-container {
+    animation: slideUpFade 0.9s ease-out;
+}
+
+@keyframes slideUpFade {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Welcome message animation */
+.welcome {
+    animation: welcomePop 1.2s ease forwards;
+}
+
+@keyframes welcomePop {
+    0% {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    60% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* -----------------------------
+   TYPING DOTS ANIMATION
+------------------------------*/
+
+.typing {
+    display: inline-flex;
+    align-items: center;
+    font-style: italic;
+    color: gray;
+    gap: 4px;
+}
+
+.typing span {
+    width: 6px;
+    height: 6px;
+    background: gray;
+    border-radius: 50%;
+    animation: blink 1.4s infinite both;
+}
+
+.typing span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.typing span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes blink {
+    0% { opacity: 0.2; }
+    20% { opacity: 1; }
+    100% { opacity: 0.2; }
+}
+
+
+/* -----------------------------
+   HISTORY
+------------------------------*/
+
+.history-btn {
+    position: fixed;          /* sticks to screen */
+    top: 15px;                /* distance from top */
+    right: 20px;              /* distance from right */
+    padding: 10px 18px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+    z-index: 1000;            /* stays above chat UI */
+}
+.history-btn:hover {
+    background-color: #0056b3;
+}
+
+.voice-btn {
+    margin-top: 6px;
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.voice-btn:hover {
+    background: #218838;
+}

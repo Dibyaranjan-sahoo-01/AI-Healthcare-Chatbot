@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
+    <title>Healthcare Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+       
+        .header-top {
+    position: fixed;   /* stays at top */
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: none;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    min-height: 64px;
+    box-sizing: border-box;
+
+    background: linear-gradient(135deg, #1abc9c 0%, #16a085 100%);
+    color: white;
+    padding: 12px 15px;
+    border-radius: 0;
+    margin: 0;
+    z-index: 100;
+    box-shadow: 0 4px 6px rgba(26, 188, 156, 0.2);
+    gap: 10px;
+}
+        .header-info {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .user-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-shrink: 0;
+        }
+
+        .user-avatar {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            border: 2px solid white;
+        }
+
+        .header-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .header-buttons a,
+        .header-buttons button {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            color: white;
+            background: rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .header-buttons a:hover,
+        .header-buttons button:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .header-buttons .logout-btn {
+            background: #e74c3c;
+            border-color: #c0392b;
+        }
+
+        .header-buttons .logout-btn:hover {
+            background: #c0392b;
+        }
+
+        .settings-dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            right: 0;
+            background-color: white;
+            min-width: 250px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            border-radius: 8px;
+            top: 100%;
+            margin-top: 10px;
+            color: #333;
+        }
+
+        .dropdown-content a {
+            color: #333;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            background: white;
+            border: none;
+            width: 100%;
+            text-align: left;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .dropdown-content a:first-child {
+            border-radius: 8px 8px 0 0;
+        }
+
+        .dropdown-content a:last-child {
+            border-radius: 0 0 8px 8px;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f0f0f0;
+        }
+
+        .settings-dropdown.active .dropdown-content {
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .header-top {
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 8px;
+                height: auto;
+                min-height: 50px;
+                padding: 0 12px;
+            }
+
+            .header-info {
+                flex: 1 1 60%;
+                min-width: 160px;
+                align-items: center;
+                overflow: visible;
+                gap: 10px;
+            }
+
+            .user-info {
+                gap: 8px;
+                flex-shrink: 1;
+            }
+
+            .user-avatar {
+                width: 36px;
+                height: 36px;
+                font-size: 14px;
+            }
+
+            .user-info div:last-child {
+                font-size: 12px;
+                line-height: 1.2;
+            }
+
+            .header-buttons {
+                flex: 1 1 35%;
+                justify-content: flex-end;
+                gap: 6px;
+                min-width: 140px;
+            }
+
+            .header-buttons a,
+            .header-buttons button {
+                flex: 1 1 auto;
+                padding: 6px 8px;
+                font-size: 12px;
+                white-space: nowrap;
+            }
+
+            .header-info h2 {
+                font-size: 16px;
+                margin: 0;
+                flex-shrink: 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header-top {
+                min-height: 32px;
+                padding: 4px 6px;
+                gap: 4px;
+            }
+
+            .header-info {
+                flex: 0 1 auto;
+                width: auto;
+                max-width: 50%;
+                gap: 3px;
+                overflow: hidden;
+            }
+
+            .header-info h2 {
+                font-size: 11px;
+                margin: 0;
+                flex-shrink: 0;
+                white-space: nowrap;
+            }
+
+            .user-info {
+                width: auto;
+                gap: 3px;
+                flex-shrink: 1;
+                min-width: 0;
+            }
+
+            .user-avatar {
+                width: 24px;
+                height: 24px;
+                font-size: 10px;
+                flex-shrink: 0;
+            }
+
+            .user-info div:last-child {
+                font-size: 9px;
+                min-width: 0;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            .user-info div:last-child div:first-child {
+                font-weight: 500;
+                white-space: nowrap;
+            }
+
+            .user-info div:last-child div:last-child {
+                font-size: 8px;
+                opacity: 0.9;
+                line-height: 1;
+            }
+
+            .header-buttons {
+                flex: 1 1 auto;
+                width: auto;
+                justify-content: flex-end;
+                min-width: 0;
+                gap: 3px;
+            }
+
+            .header-buttons a,
+            .header-buttons button {
+                flex: 0 1 auto;
+                padding: 4px 6px;
+                font-size: 10px;
+                min-width: auto;
+                white-space: nowrap;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .header-top {
+                min-height: 32px;
+                padding: 3px 4px;
+                gap: 3px;
+            }
+
+            .header-info h2 {
+                font-size: 10px;
+            }
+
+            .header-info {
+                max-width: 45%;
+                gap: 2px;
+            }
+
+            .user-avatar {
+                width: 22px;
+                height: 22px;
+                font-size: 9px;
+            }
+
+            .user-info div:last-child {
+                font-size: 8px;
+            }
+
+            .user-info div:last-child div:last-child {
+                font-size: 7px;
+            }
+
+            .header-buttons {
+                gap: 2px;
+            }
+
+            .header-buttons a,
+            .header-buttons button {
+                padding: 3px 5px;
+                font-size: 9px;
+            }
+        }
+        .watermark {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    opacity: 0.3;        /* makes it look like watermark */
+    font-size: 14px;
+    color: gray;
+    pointer-events: none; /* prevents clicking */
+}
+    </style>
+</head>
+<body>
+<div class="header-top">
+    <div class="header-info">
+        <h2 style="margin: 0;">🏥 Healthcare Chatbot</h2>
+        <div class="user-info">
+            <div class="user-avatar">{{ username[0]|upper }}</div>
+            <div>
+                <div style="font-weight: 500;">{{ username }}</div>
+                <div style="font-size: 12px; opacity: 0.8;">Logged in</div>
+            </div>
+        </div>
+    </div>
+    <div class="header-buttons">
+        <a href="/history-page">📜 History</a>
+        {% if role == 'admin' %}
+            <a href="/admin/users" style="background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);">🛡️ Admin Panel</a>
+        {% endif %}
+        <a href="/logout" class="logout-btn">🚪 Logout</a>
+        <button id="dark-toggle" onclick="toggleDarkMode()" style="background: rgba(255, 255, 255, 0.3); border: 1px solid rgba(255, 255, 255, 0.3);">🌙</button>
+    </div>
+</div>
+
+<div class="chat-container">
+    <div class="chat-header">
+        🤖 Chat Assistant
+    </div>
+
+    <div id="chat-box" class="chat-box">
+        <div class="bot-message welcome">
+          Hello 👋 I am your healthcare assistant.  
+          Please describe your symptoms.
+        </div>
+
+    </div>
+
+   
+<div class="chat-input">
+    <select id="language-select" class="language-select" aria-label="Response language">
+        <option value="en">English</option>
+        <option value="or">Odia</option>
+    </select>
+    <input 
+        type="text" 
+        id="user-input" 
+        placeholder="Type your message here..."
+        onkeydown="handleEnter(event)"
+    />
+    <button onclick="sendMessage()">Send</button>
+    <button onclick="sendDiagnosis()" class="diagnose-btn">Diagnose</button>
+</div>
+
+</div>
+
+<script>
+function handleEnter(event) {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        sendMessage();
+    }
+}
+
+function toggleDarkMode() {
+    document.body.classList.toggle('dark-mode');
+    localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
+}
+
+// Load dark mode preference
+if (localStorage.getItem('darkMode') === 'true') {
+    document.body.classList.add('dark-mode');
+}
+</script>
+<div class="watermark">Version: H.4.3.1</div>
+<script src="{{ url_for('static', filename='main.js') }}"></script>
+</body>
+</html>

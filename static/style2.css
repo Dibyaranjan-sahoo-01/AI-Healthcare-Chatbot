@@ -1,0 +1,193 @@
+/* ===============================
+   GLOBAL
+=================================*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Animated gradient background */
+    background: linear-gradient(-45deg, #2b7a78, #3aafa9, #def2f1, #17252a);
+    background-size: 400% 400%;
+    animation: gradientMove 12s ease infinite;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* ===============================
+   CHAT CONTAINER (GLASS STYLE)
+=================================*/
+.chat-container {
+    width: 520px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    border: 1px solid rgba(255,255,255,0.2);
+    box-shadow: 0 25px 50px rgba(0,0,0,0.25);
+
+    overflow: hidden;
+    animation: containerPop 0.8s ease;
+}
+
+@keyframes containerPop {
+    from { opacity: 0; transform: scale(0.95) translateY(40px); }
+    to { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+/* ===============================
+   HEADER
+=================================*/
+.chat-header {
+    padding: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    background: rgba(0,0,0,0.25);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ===============================
+   CHAT BOX
+=================================*/
+.chat-box {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* ===============================
+   MESSAGE BUBBLES
+=================================*/
+.bot-message,
+.user-message {
+    max-width: 75%;
+    padding: 12px 16px;
+    border-radius: 18px;
+    font-size: 14px;
+    line-height: 1.5;
+    animation: messageSlide 0.3s ease;
+}
+
+@keyframes messageSlide {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Bot */
+.bot-message {
+    align-self: flex-start;
+    background: rgba(255,255,255,0.8);
+    color: #17252a;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* User */
+.user-message {
+    align-self: flex-end;
+    background: linear-gradient(135deg, #3aafa9, #2b7a78);
+    color: white;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* ===============================
+   TYPING INDICATOR
+=================================*/
+.typing {
+    align-self: flex-start;
+    display: flex;
+    gap: 6px;
+    padding: 10px 14px;
+    background: rgba(255,255,255,0.7);
+    border-radius: 18px;
+}
+
+.typing span {
+    width: 6px;
+    height: 6px;
+    background: #555;
+    border-radius: 50%;
+    animation: bounce 1.4s infinite ease-in-out;
+}
+
+.typing span:nth-child(2) { animation-delay: 0.2s; }
+.typing span:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes bounce {
+    0%, 80%, 100% { transform: scale(0.7); opacity: 0.5; }
+    40% { transform: scale(1); opacity: 1; }
+}
+
+/* ===============================
+   INPUT AREA
+=================================*/
+.chat-input {
+    display: flex;
+    padding: 15px;
+    background: rgba(0,0,0,0.2);
+    backdrop-filter: blur(10px);
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 12px;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+.chat-input button {
+    margin-left: 10px;
+    padding: 12px 18px;
+    border-radius: 12px;
+    border: none;
+    background: linear-gradient(135deg, #3aafa9, #2b7a78);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.chat-input button:hover {
+    transform: scale(1.05);
+}
+
+/* ===============================
+   VOICE BUTTON
+=================================*/
+.voice-btn {
+    margin-top: 8px;
+    padding: 6px 10px;
+    border-radius: 8px;
+    border: none;
+    background: #28a745;
+    color: white;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.voice-btn:hover {
+    background: #218838;
+}

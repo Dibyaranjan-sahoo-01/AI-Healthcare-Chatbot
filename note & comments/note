@@ -1,0 +1,208 @@
+## ✅ Project Overview (What each part does)
+
+### 🧠 Core “brain” — response_engine.py
+- **Loads**:
+  - knowledge_base.json → response rules / keywords / priority
+  - symptom.json → symptom→disease mapping
+- **Primary logic**:
+  1. **Emergency detection** (high priority keywords)
+  2. **Knowledge-base keyword matching** (best score)
+  3. **Symptom diagnosis** (matches symptoms → possible diseases)
+  4. **Formatting response** (now provides next steps, not scores)
+- **Provides**:
+  - `get_response(user_text)` → used by `/chat`
+  - `diagnose_symptoms(user_text)` → used by `/diagnose`
+  - `format_diagnosis(...)` → formats output into user-friendly advice
+
+---
+
+### 📦 NLP helper — nlp.py
+- Preprocesses user text:
+  - Lowercases, removes non-alphanumeric, normalizes spaces
+- Tokenizes text (simple whitespace split)
+- `contains_keyword(text, keyword)`:
+  - Handles **exact matches**
+  - Handles **phrase matching** (e.g., “skin rash”)
+  - Handles **stemmed variants** (e.g., “itchy” ↔ “itching”)
+  - Includes a small **synonym dictionary** (e.g., itch ↔ itchy / rash ↔ rashes)
+
+---
+
+### 🌐 Web server + API — app.py
+- Runs a Flask server
+- Routes:
+  - `GET /` → serves chatbot UI (index.html)
+  - `POST /chat` → returns bot response via `ResponseEngine.get_response()`
+  - `POST /diagnose` → returns structured diagnosis via `ResponseEngine.diagnose_symptoms()`
+  - `/history`, `/history-page` → view chat logs stored in SQLite
+- Saves all chats to chat_history.db (via `sqlite3`)
+
+---
+
+### 📚 Knowledge data
+#### knowledge_base.json
+- Contains **entries**:
+  - `condition` (name)
+  - `priority` (high/medium/low)
+  - `keywords` (phrases/terms to match)
+  - `response` (text to return)
+- Used by response engine for direct Q&A and emergency detection
+
+#### symptom.json
+- Contains mappings:
+  - `disease` → list of `symptoms`
+- Used for symptom-based diagnosis (how the bot guesses disease based on symptoms)
+
+---
+
+### 🧩 Frontend UI (Chat interface)
+#### index.html
+- Chat layout (chat box, input, buttons)
+- Contains:
+  - “Send” button (sends to `/chat`)
+  - “Diagnose” button (sends to `/diagnose`)
+
+#### main.js
+- Handles sending messages to the server
+- Displays responses in chat
+- Plays sound effects
+- Adds diagnose button support (`/diagnose`)
+- Includes text-to-speech
+
+#### style.css (and related styles)
+- UI appearance (colors, layout, chat bubbles, etc.)
+
+---
+
+### 🧪 Scripts (maintenance / data tools)
+- find_missing_diseases.py
+  - Reports which diseases exist in symptom.json but are missing from knowledge_base.json
+- add_missing_responses.py
+  - Auto-adds “generic” entries to knowledge_base.json for any diseases missing from the KB (with basic “what to do” response)
+
+---
+
+### 🗃️ Database (chat history)
+- chat_history.db
+  - Table `interactions`
+  - Stores: `user_text`, `bot_text`, `timestamp`
+
+---
+
+## ✅ How data flows when you send a message
+
+1. User sends message from UI  
+2. `/chat` receives it → calls `ResponseEngine.get_response()`
+3. Response engine:
+   - Checks **emergency keywords** (highest priority)
+   - Checks **knowledge_base keywords**
+   - If no match → runs **symptom diagnosis**
+   - Returns friendly advice + next steps (not raw scoring)
+4. Response returned to UI + stored in chat_history.db
+
+---
+
+## 🔍 Where to modify behavior
+If you want to change what the bot says or how it thinks, edit:
+
+- ✅ knowledge_base.json → to add more phrases/responses
+- ✅ symptom.json → to expand disease/symptom mapping
+- ✅ nlp.py → to improve matching/synonyms
+- ✅ response_engine.py → to change response formatting or logic order
+- ✅ UI (HTML/JS) → to change how responses display
+
+---
+
+If you want, I can also give you a **visual diagram of workflow** (data flow chart) or a **mapping of which files control which behavior** more explicitly (like a quick table).
+
+
+
+
+
+
+## ✅ Visual Workflow Diagram (Mermaid)
+
+```mermaid
+flowchart TD
+  subgraph UI
+    A[User types message] --> B[Send /chat or /diagnose]
+  end
+
+  subgraph Server
+    B --> C[Flask route (/chat or /diagnose)]
+    C --> D[ResponseEngine.get_response() / diagnose_symptoms()]
+    D --> E[NLP analysis (nlp.py)]
+    E --> F[Knowledge base match (knowledge_base.json)]
+    E --> G[Symptom match (symptom.json)]
+    F --> H[Return KB response]
+    G --> I[Diagnosis formatting (response_engine.py)]
+    H --> J[Send JSON response]
+    I --> J
+  end
+
+  J --> K[UI displays bot response]
+  K --> L[Store to chat_history.db]
+```
+
+---
+
+## ✅ File → Behavior Mapping (What controls what)
+
+### 🧠 Core Decision Logic  
+| File | Role |
+|------|------|
+| response_engine.py | Main decision engine. 1) Emergency matching, 2) KB keyword matching, 3) symptom matching, 4) response formatting. Contains `get_response`, `diagnose_symptoms`, `format_diagnosis`. |
+
+---
+
+### 🧠 NLP + Matching  
+| File | Role |
+|------|------|
+| nlp.py | Text preprocessing + keyword matching (exact, phrase, stem, synonyms, fuzzy). Crucial for both KB and symptom matching. |
+
+---
+
+### 📚 Knowledge Data  
+| File | Role |
+|------|------|
+| knowledge_base.json | “Rulebook” of conditions + keywords + responses. Used for immediate replies. |
+| symptom.json | Symptom→disease mapping used for diagnosis when KB doesn’t match. |
+
+---
+
+### 🌐 Server Routing / APIs  
+| File | Role |
+|------|------|
+| app.py | Flask server + API endpoints: `/chat`, `/diagnose`, `/history`, `/history-page`. Saves interactions to chat_history.db. |
+
+---
+
+### 🧩 Frontend (UI + Interaction)  
+| File | Role |
+|------|------|
+| index.html | Chat UI layout + buttons (Send, Diagnose) |
+| main.js | Sends requests to `/chat` and `/diagnose`, renders returned messages, handles sound + text-to-speech |
+| style.css | UI styling for chat UI |
+
+---
+
+### 🧪 Support / Utility Scripts  
+| File | Role |
+|------|------|
+| find_missing_diseases.py | Reports diseases in symptom.json missing from knowledge_base.json |
+| add_missing_responses.py | Adds generic response entries for missing diseases into knowledge_base.json |
+
+---
+
+### 🗃️ Data Storage  
+| File | Role |
+|------|------|
+| chat_history.db | Stores conversation history (user + bot text + timestamp) |
+
+---
+
+If you want, I can export this mapping as a **diagram file** (SVG/PNG) or add a **more detailed sequence diagram** showing how a specific user message travels through each file.
+
+
+
+
