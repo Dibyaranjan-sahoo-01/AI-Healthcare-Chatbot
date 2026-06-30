@@ -1,4 +1,4 @@
-# AI Healthcare Chatbot - Academic Demo
+# AI Healthcare Chatbot 
 
 ## Overview
 Simple AI Healthcare Chatbot for academic demonstration. The bot uses basic keyword matching to provide preliminary health guidance.
