@@ -65,12 +65,6 @@ AI-Healthcare-Chatbot/
 
 ---
 
-## ⚠️ Disclaimer
-
-This project is intended **only for educational and academic purposes**. It is **not** a medical device and should **not** be used for diagnosis or treatment. Always consult a qualified healthcare professional for medical advice.
-
----
-
 ## 👨‍💻 Author
 
 **Dibyaranjan Sahoo**
