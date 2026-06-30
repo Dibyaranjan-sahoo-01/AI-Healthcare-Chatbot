@@ -1,24 +1,78 @@
-# AI Healthcare Chatbot 
+# 🏥 AI Healthcare Chatbot
 
-## Overview
-Simple AI Healthcare Chatbot for academic demonstration. The bot uses basic keyword matching to provide preliminary health guidance.
+## 📖 Overview
 
-## Files
-- app.py : Flask web application
-- response_engine.py : loads knowledge base and finds responses
-- nlp.py : simple preprocessing utilities
-- knowledge_base.json : symptom-response data
-- templates/index.html : web UI
-- static/* : CSS and JavaScript for UI
-- chat_history.db : created at runtime to store interactions
-- requirements.txt : Python dependencies
+A simple AI Healthcare Chatbot built with **Python** and **Flask** that provides basic symptom-based health guidance using a rule-based approach. This project is designed for **educational and academic purposes** to demonstrate chatbot development and web application concepts.
 
-## How to run (locally)
+---
+
+## ✨ Features
+
+- Interactive chatbot interface 💬
+- Basic symptom-based health guidance 🩺
+- Rule-based response engine 🧠
+- User-friendly web interface 🌐
+- Chat history stored using SQLite 📝
+- JSON-based knowledge base 📂
+- Lightweight and easy to use ⚡
+
+---
+
+## 🛠️ Tech Stack
+
+- 🐍 Python
+- 🌐 Flask
+- 🎨 HTML
+- 🎭 CSS
+- ⚡ JavaScript
+- 🗄️ SQLite
+- 📄 JSON
+
+---
+
+## 📁 Project Structure
+
+```text
+AI-Healthcare-Chatbot/
+│── app.py
+│── response_engine.py
+│── nlp.py
+│── knowledge_base.json
+│── requirements.txt
+│── templates/
+│── static/
+│── chat_history.db
+```
+
+---
+
+## 🚀 How to Run
+
 1. Create a virtual environment (recommended).
 2. Install dependencies: `pip install -r requirements.txt`
 3. Run the app: `python app.py`
 4. Open `http://127.0.0.1:5000` in your browser.
 
-## Notes
-- This is a rule-based educational demo. It is NOT a medical device or diagnostic tool.
-- For improved NLP, you can integrate spaCy or train an intent classifier.
+
+## 🎯 Future Enhancements
+
+- AI-powered intent recognition
+- NLP integration using spaCy
+- Multi-language support
+- User authentication
+- Health report generation
+- Cloud deployment
+
+---
+
+## ⚠️ Disclaimer
+
+This project is intended **only for educational and academic purposes**. It is **not** a medical device and should **not** be used for diagnosis or treatment. Always consult a qualified healthcare professional for medical advice.
+
+---
+
+## 👨‍💻 Author
+
+**Dibyaranjan Sahoo**
+
+⭐ If you found this project helpful, don't forget to **Star** the repository!
